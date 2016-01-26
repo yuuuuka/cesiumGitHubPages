@@ -120,16 +120,15 @@ for (var i=0; i<viewPointsArray.length; i++) {
 var viewPointChangeMenuHtml = '<ul class="viewpoint">' + dropDownList + '</ul>';
 viewPointChangeMenu.innerHTML = viewPointChangeMenuHtml;
 
-//KML配列作成
+//czml配列作成
 
-function kmlData(_label, _url) {
+function czmlData(_label, _url) {
 	this.label = _label;
 	this.url = _url;
 }
 
-var kmlDataArray=[];
-kmlDataArray[0]=new kmlData("避難所",'data/kml/hinanjo.kml');
-kmlDataArray[1]=new kmlData("避難場所",'data/kml/hinanbasyo.kml');
+var czmlDataArray=[];
+czmlDataArray[0]=new czmlData("ロードキル",'data/czml/animal.czml');
 
 //オーバレイ配列を用意
 
@@ -192,22 +191,22 @@ function groundZero(){
 function landing(){
 	changeViewPoint(2,3);
 	setTimeout('fadeInOut(blackOutDiv,1)',3000);
-	setTimeout('loadKml()',3000);
+	setTimeout('loadCzml()',3000);
 }
 
-//KMLロード関数
+//czmlロード関数
 
-function loadKml(){			
+function loadCzml(){			
 	var i = 0;
 	var load = setInterval(function(){
-		var promise = Cesium.KmlDataSource.load(kmlDataArray[i].url);
+		var promise = Cesium.CzmlDataSource.load(czmlDataArray[i].url);
 		promise.then(function(dataSource) {
 			viewer.dataSources.add(dataSource);
 		}).otherwise(function(error){
-			alert('KMLデータが読み込めません');
+			alert('CZMLデータが読み込めません');
 		});
 		i++;
-		if (i == kmlDataArray.length){
+		if (i == czmlDataArray.length){
 			clearInterval(load);
 			setClickEvent();
 			setTimeout('fadeInOut(blackOutDiv,0)',3000);
