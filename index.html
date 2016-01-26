@@ -104,9 +104,8 @@ function viewPoints(_label, _lat, _lng, _heading, _pitch, _range) {
 }
 
 var viewPointsArray=[];
-viewPointsArray[0]=new viewPoints("首都大",35.661,139.3657347,0,-45,1000);
-viewPointsArray[1]=new viewPoints("日野市",35.654,139.394,0,-89,15000);
-viewPointsArray[2]=new viewPoints("初期視点",35.654,139.394,0,-35,5000);
+viewPointsArray[0]=new viewPoints("富士山上空",35.360556,138.727778,0,-89,28000);
+viewPointsArray[1]=new viewPoints("初期視点",35.360556,138.727778,0,-30,28000);
 
 //視点メニュー作成
 
@@ -156,8 +155,8 @@ var viewer = new Cesium.Viewer('cesiumContainer',{
 
 var cesiumTerrainProviderMeshes = new Cesium.CesiumTerrainProvider({
 	url : '//assets.agi.com/stk-terrain/world',
-	requestWaterMask : true,
-	requestVertexNormals : true
+	requestWaterMask : false,
+	requestVertexNormals : false
 });
 viewer.terrainProvider = cesiumTerrainProviderMeshes;
 
@@ -183,18 +182,18 @@ var layers = viewer.scene.imageryLayers;
 setTimeout('groundZero()',1000);
 
 function groundZero(){
-	changeViewPoint(1,3);
+	changeViewPoint(0,3);
 	openStreetMapLayer();
 	setTimeout('landing()',4000);
 }
 
 function landing(){
-	changeViewPoint(2,3);
+	changeViewPoint(1,3);
 	setTimeout('fadeInOut(blackOutDiv,1)',3000);
 	setTimeout('loadCzml()',3000);
 }
 
-//czmlロード関数
+//CZMLロード関数
 
 function loadCzml(){			
 	var i = 0;
