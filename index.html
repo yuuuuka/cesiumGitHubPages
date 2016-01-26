@@ -104,8 +104,9 @@ function viewPoints(_label, _lat, _lng, _heading, _pitch, _range) {
 }
 
 var viewPointsArray=[];
-viewPointsArray[0]=new viewPoints("富士山上空",35.360556,138.727778,0,-89,28000);
-viewPointsArray[1]=new viewPoints("初期視点",35.360556,138.727778,0,-30,28000);
+viewPointsArray[0]=new viewPoints("富士山上空",35.360556,138.727778,0,-89,30000);
+viewPointsArray[1]=new viewPoints("初期視点",35.360556,138.727778,0,-30,26000);
+viewPointsArray[2]=new viewPoints("日本全国",37.95041488123474,137.44348377604837,0,-85,3421711);
 
 //視点メニュー作成
 
@@ -179,6 +180,7 @@ $(function() {
 fadeInOut(blackOutDiv,0);
 
 var layers = viewer.scene.imageryLayers;
+changeViewPoint(2,0);
 setTimeout('groundZero()',1000);
 
 function groundZero(){
