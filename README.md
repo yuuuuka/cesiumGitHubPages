@@ -5,10 +5,12 @@
 首都大学東京の授業教材として用いている以下のリポジトリを元にしています。
 
 + [Cesiumを使ったKML可視化のサンプル](https://github.com/wtnv-lab/cesiumGitHubPages "Cesiumを使ったKML可視化のサンプル")
+
+KmlDataSourceをCzmlDataSourceに変更するなどの改造を施しています。ご興味のあるかたは参考リンクの[Cesium](http://cesiumjs.org/ "Cesium")にあるリファレンスをご覧ください。
  
 ### 使い方
 
-視点移動、ジオコーディング、ImageryLayerの切り替え、現在地へ移動、ストリートビュー起動、ヘルプ起動の各機能が実装されています。
+視点移動、ジオコーディング、ImageryLayerの切り替え、ストリートビュー起動、ヘルプ起動の各機能が実装されています。
 
 + 視点移動・GitHubへのリンク：左上のメニューボタン
 + ジオコーディング：左上のフォーム
