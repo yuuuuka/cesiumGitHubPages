@@ -212,6 +212,10 @@ function loadCzml(){
 		if (i == czmlDataArray.length){
 			clearInterval(load);
 			setClickEvent();
+            viewer.clock.onTick.addEventListener(function(clock){
+				var nowTime = viewer.clock.currentTime;
+				setTimeout('checkTime()',1000);
+			});
 			setTimeout('fadeInOut(blackOutDiv,0)',3000);
 		}
 	}, 200);
