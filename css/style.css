@@ -26,6 +26,14 @@ a:hover{
 	background:gray;
 }
 
+.license{
+    position:absolute;
+    bottom:30px;
+    left:2px;
+    opacity:0.5;
+    font-size:0px;
+}
+
 /*Cesiumインターフェイス関連*/
 
 .cesium-infoBox-iframe {
