@@ -31,7 +31,22 @@ a:hover{
     bottom:30px;
     left:2px;
     opacity:0.5;
-    font-size:0px;
+    font-size:0;
+}
+
+a.tooltip span {
+    display:none;
+    padding:2px 3px;
+    margin-left:8px;
+    width:130px;
+
+}
+a.tooltip:hover span{
+    display:inline;
+    position:absolute;
+    border:1px solid #cccccc;
+    background:#ffffff;
+    color:#6c6c6c;
 }
 
 /*Cesiumインターフェイス関連*/
