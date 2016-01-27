@@ -3,12 +3,12 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-	<meta name="description" content="Cesiumを使った日野市オープンデータ可視化のサンプルです" />
-	<meta property="og:image" content="data/hinoshi.png"
+	<meta name="description" content="富士山ロードキルマップ" />
+	<meta property="og:image" content="data/screen.jpg"
 	/>
-	<meta property="og:description" content="Cesiumを使った日野市オープンデータ可視化のサンプルです" />
+	<meta property="og:description" content="富士山ロードキルマップ" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-	<title>日野市オープンデータ可視化</title>
+	<title>富士山ロードキルマップ</title>
 	<link rel="alternate" href="http://hiroshima.archiving.jp/index_en.html" hreflang="en" />
 	<link rel="SHORTCUT ICON" href="http://shinsai.mapping.jp/favicon.ico">
 	<style>
@@ -54,11 +54,13 @@
 		<span class="icon-font">car</span>
 	</div>
 </div>
+<!--
 <div id="buttonGeo" class="general-button" onclick="flyToMyLocation();">
 	<div class="button-content">
 		<span class="icon-font">geo</span>
 	</div>
 </div>
+-->
 <div id="slide_menu"></div>
 <div id="slide_menu2"></div>
 <div id="streetView_wrapper">
@@ -104,8 +106,8 @@ function viewPoints(_label, _lat, _lng, _heading, _pitch, _range) {
 }
 
 var viewPointsArray=[];
-viewPointsArray[0]=new viewPoints("富士山上空",35.360556,138.727778,0,-89,30000);
-viewPointsArray[1]=new viewPoints("初期視点",35.360556,138.727778,0,-30,26000);
+viewPointsArray[0]=new viewPoints("富士山上空",35.360556,138.727778,0,-89,36000);
+viewPointsArray[1]=new viewPoints("初期視点",35.360556,138.727778,0,-20,28000);
 viewPointsArray[2]=new viewPoints("日本全国",37.95041488123474,137.44348377604837,0,-85,3421711);
 
 //視点メニュー作成
@@ -145,7 +147,7 @@ var viewer = new Cesium.Viewer('cesiumContainer',{
 	navigationHelpButton : false,
 	navigationInstructionsInitiallyVisible : false,
 	geocoder:false,
-	timeline: false,
+//	timeline: false,
 	animation: false,
 	sceneModePicker:false,
 	baseLayerPicker:false,
@@ -342,8 +344,8 @@ function setClickEvent(){
 							});
 					}
 					var newHeading = Cesium.Math.toRadians(0);
-					var newPitch = Cesium.Math.toRadians(-85);
-					var newRange = 500;
+					var newPitch = Cesium.Math.toRadians(-30);
+					var newRange = 1000;
 
 					var center = position;
 					var boundingSphere = new Cesium.BoundingSphere(center, 1000);
