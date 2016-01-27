@@ -94,6 +94,10 @@ $(function() {
 	$('#button4').hide();
 });
 
+//停止時間
+
+var stopISO = '2015-12-24T23:59:59+09:00';
+
 //視点作成配列
 
 function viewPoints(_label, _lat, _lng, _heading, _pitch, _range) {
@@ -368,7 +372,7 @@ function setClickEvent(){
 //時間チェック
 
 function checkTime() {
-	viewer.clock.multiplier = 3000 * 60 * 60;
+	viewer.clock.multiplier = 3000 * 60 * 30;
 
 	var now = viewer.clock.currentTime;
 	var stop = Cesium.JulianDate.fromIso8601(stopISO);
