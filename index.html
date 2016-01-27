@@ -32,6 +32,7 @@
 <div id="blackOut">
 	<img class="loading" src="data/loading.gif">
 </div>
+<div id="timeCounter"></div>
 <div id="cesiumContainer"></div>
 <div id="button" class="general-button">
 	<div class="button-content">
@@ -360,8 +361,46 @@ function setClickEvent(){
 }, Cesium.ScreenSpaceEventType.LEFT_DOUBLE_CLICK);
 }
 
-//現在地へ移動する関数
+//時間チェック
 
+function checkTime() {
+	viewer.clock.multiplier = 3000 * 60 * 60;
+
+	var now = viewer.clock.currentTime;
+	var stop = Cesium.JulianDate.fromIso8601(stopISO);
+	var nowAndCurrent = Cesium.JulianDate.compare(now, stop);
+	if (nowAndCurrent > 0){
+		viewer.clock.shouldAnimate = false;
+	}
+
+	var nowJST = new Cesium.JulianDate;
+	Cesium.JulianDate.addHours(now, 9, nowJST);
+	var nowIso = Cesium.JulianDate.toIso8601(nowJST);
+	thisTime = '3.' + nowIso.substr(8,2) + '.' + nowIso.substr(11,2);
+
+	var nowDate = Cesium.JulianDate.toDate(now);
+	var y = nowDate.getFullYear();
+	var m = nowDate.getMonth() + 1;
+	var d = nowDate.getDate();
+	if (m < 10) {
+		m = '0' + m;
+	}
+	if (d < 10) {
+		d = '0' + d;
+	}
+	var displayTime = y + '年' + m + '月' + d + '日';
+	timeCounter(displayTime);
+}
+
+//カウンター表示
+
+function timeCounter(displayTime){
+	var timeCounter = document.getElementById("timeCounter");
+	timeCounter.innerHTML = '<p class="timeCounter">' + displayTime +'</p>';
+}
+
+//現在地へ移動する関数
+/*
 function flyToMyLocation() {
 	function fly(position) {
 		viewer.camera.flyTo({
@@ -371,7 +410,7 @@ function flyToMyLocation() {
 	}
 	navigator.geolocation.getCurrentPosition(fly);
 }
-
+*/
 //ヘルプ
 
 function help(){
