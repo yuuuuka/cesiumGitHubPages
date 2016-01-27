@@ -210,9 +210,29 @@ function landing(){
 function loadCzml(){			
 	var i = 0;
 	var load = setInterval(function(){
-		var promise = Cesium.CzmlDataSource.load(czmlDataArray[i].url);
+        var czmlDataSource = new Cesium.CzmlDataSource();
+		var promise = czmlDataSource.load(czmlDataArray[i].url);
 		promise.then(function(dataSource) {
 			viewer.dataSources.add(dataSource);
+            var billboardsIdsLength = czmlDataSource.entities.values.length;
+            console.log (billboardsIdsLength);
+
+			var i = 0;
+			while (i <= billboardsIdsLength){
+				var id = i;				
+				var entity = czmlDataSource.entities.getById(id);
+                console.log (entity);
+				if (entity) {
+					var scaleByDistance = new Cesium.NearFarScalar(2.0e4,1.2,1.0e5,0.2);
+					var translucencyByDistance = new Cesium.NearFarScalar(2.0e4,1.0,2.0e5,0.6);
+					var translucencyByDistanceLabel = new Cesium.NearFarScalar(2.0e4,0.9,6.0e4,0.0);
+                    entity.billboard.scaleByDistance = scaleByDistance;
+                    entity.billboard.translucencyByDistance = translucencyByDistance;
+                    entity.polyline.translucencyByDistance = translucencyByDistance;
+					entity.label.translucencyByDistance = translucencyByDistanceLabel;
+				}
+				i++;
+			}
 		}).otherwise(function(error){
 			alert('CZMLデータが読み込めません');
 		});
