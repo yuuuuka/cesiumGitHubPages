@@ -122,17 +122,19 @@ foreach ($xml->Document->Placemark as $placemark) {
         );
 
     $rgbaTweet = array(
-        0,114,255,216
+        150,219,242,218
         );
 
     $animalArray = $$animal;
         
     $billboardColor = array(
-        "rgba" => $rgbaTweet		
+        "rgba" => array(
+            $animalArray[1],$animalArray[2],$animalArray[3],255
+            ),		
         );
 
     $rgba = array(
-        255,0,0,48
+        255,0,0,64
         );
     
     $polylineColor = array(
