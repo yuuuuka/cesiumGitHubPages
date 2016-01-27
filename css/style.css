@@ -224,9 +224,9 @@ input {
 
 #streetView_wrapper {
 	position: absolute;
-	top: 110px;
+	top: 50%;
 	right: 0;
-	width: 320px;
+	width: 100%;
 	height: 320px;
 	display: none;
 	background-color:rgba(0,0,0,0.7);
@@ -250,8 +250,8 @@ input {
 
 .btn {
 	position: absolute;
-	left: 90%;
-	bottom: 90%;
+	right: 2px;
+	top: 7px;
 	background: #3498db;
 	background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
 	background-image: -moz-linear-gradient(top, #3498db, #2980b9);

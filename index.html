@@ -4,9 +4,9 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-    <meta name="description" content="富士山麓で起きた野生動物の交通事故の場所と動物の種類のマップです" />
+    <meta name="description" content="富士山麓で起きた野生動物の交通事故の場所と動物の種類のマップです。首都大学東京 渡邉英徳研究室✕富士山アウトドアミュージアム" />
     <meta property="og:image" content="data/screen.jpg" />
-    <meta property="og:description" content="富士山麓で起きた野生動物の交通事故の場所と動物の種類のマップです" />
+    <meta property="og:description" content="富士山麓で起きた野生動物の交通事故の場所と動物の種類のマップです。首都大学東京 渡邉英徳研究室✕富士山アウトドアミュージアム" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <title>富士山「動物交通事故死」マップ</title>
     <link rel="SHORTCUT ICON" href="http://shinsai.mapping.jp/favicon.ico">
@@ -66,7 +66,7 @@
     <div id="slide_menu2"></div>
     <div id="streetView_wrapper">
         <div id="streetView"></div>
-        <button class="btn" onclick="fadeInOut(streetView_wrapper,0)">×</button>
+        <button class="btn" onclick="svFadeOut()">×</button>
     </div>
     <script>
         //スワイプによるスクロール禁止
@@ -370,9 +370,18 @@ function setClickEvent(){
 					else{
 						streetViewWrapper.style.display = "block";
 						fadeInOut(streetViewWrapper,1);
+
+                        $(function() {
+                            $('#cesiumContainer').css('height','50%');
+                        });                       
+                        
 						var svp = new google.maps.StreetViewPanorama(
 							document.getElementById("streetView"),{
-								position : latlng
+								position : latlng,
+                                zoomControl : false,
+                                panControl : false,
+                                addressControl : false,
+                                fullscreenControl : false
 							});
 					}
 /*
@@ -392,7 +401,7 @@ function setClickEvent(){
 */
 				});
             } else {
-                fadeInOut(streetView_wrapper,0);
+                svFadeOut();
             }
         }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
 }
@@ -400,7 +409,7 @@ function setClickEvent(){
 //時間チェック
 
 function checkTime() {
-	viewer.clock.multiplier = 3000 * 60 * 30;
+	viewer.clock.multiplier = 3000 * 60 * 60;
 
 	var now = viewer.clock.currentTime;
 	var stop = Cesium.JulianDate.fromIso8601(stopISO);
@@ -453,7 +462,7 @@ function help(){
 	window.open('http://labo.wtnv.jp/');
 }
 
-//DIVのフェードイン・アウト	関数
+//DIVのフェードイン・アウト関数
 
 function fadeInOut(layer,param) {
 	if (param == 0){
@@ -468,6 +477,14 @@ function fadeInOut(layer,param) {
 	} 
 }
 
+//ストビューDIVのフェードアウト関数
+
+function svFadeOut() {
+    fadeInOut(streetView_wrapper,0);
+    $(function() {
+        $('#cesiumContainer').css('height','100%');
+    });    
+}
     </script>
 </body>
 
