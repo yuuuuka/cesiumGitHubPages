@@ -52,16 +52,11 @@
 		<span class="icon-font">paramater</span>
 	</div>
 </div>
-<div id="button4" class="general-button" onclick="streetView();">
-	<div class="button-content">
-		<span class="icon-font">car</span>
-	</div>
-</div>
 <div id="slide_menu"></div>
 <div id="slide_menu2"></div>
 <div id="streetView_wrapper">
 	<div id="streetView"></div>
-	<button class="btn" onclick="svFadeOut()">×</button>
+	<button class="btn" onclick="svClose()">×</button>
 </div>
 
 <script>
@@ -385,10 +380,7 @@ function setClickEvent(){
 				});
 		} else {
 			delete svp;
-			streetViewWrapper.style.display = "none";
-			$(function() {
-				$('#cesiumContainer').css('height','100%');
-			}); 
+			svClose();
 		}
 	}, Cesium.ScreenSpaceEventType.LEFT_CLICK);
 }
@@ -454,8 +446,11 @@ function fadeInOut(layer,param) {
 
 //ストビューDIVのフェードアウト関数
 
-function svFadeOut() {
-
+function svClose() {
+	streetViewWrapper.style.display = "none";
+	$(function() {
+		$('#cesiumContainer').css('height','100%');
+	}); 
 }
 
 </script>
