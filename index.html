@@ -2,74 +2,74 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-    <meta name="description" content="富士山麓で起きた野生動物の交通事故の場所と動物の種類のマップです。首都大学東京 渡邉英徳研究室✕富士山アウトドアミュージアム" />
-    <meta property="og:image" content="data/screen.jpg" />
-    <meta property="og:description" content="富士山麓で起きた野生動物の交通事故の場所と動物の種類のマップです。首都大学東京 渡邉英徳研究室✕富士山アウトドアミュージアム" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-    <title>富士山「動物交通事故死」マップ</title>
-    <link rel="SHORTCUT ICON" href="http://shinsai.mapping.jp/favicon.ico">
-    <style>
-        @import url(Cesium/Widgets/widgets.css);
-    </style>
-    <link rel="stylesheet" type="text/css" media="all" href="./css/style.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="./css/menubutton.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="./css/jquery-ui.min.css" />
-    <script src="js/jquery-2.1.3.min.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
-    <script src="js/slidein.js"></script>
-    <script src="js/slidein2.js"></script>
-    <script src="Cesium/Cesium.js"></script>
-    <script src="http://www.google.com/jsapi"></script>
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta name="description" content="富士山麓で起きた野生動物の交通事故の場所と動物の種類のマップです。首都大学東京 渡邉英徳研究室✕富士山アウトドアミュージアム" />
+	<meta property="og:image" content="data/screen.jpg" />
+	<meta property="og:description" content="富士山麓で起きた野生動物の交通事故の場所と動物の種類のマップです。首都大学東京 渡邉英徳研究室✕富士山アウトドアミュージアム" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<title>富士山「動物交通事故死」マップ</title>
+	<link rel="SHORTCUT ICON" href="http://shinsai.mapping.jp/favicon.ico">
+	<style>
+	@import url(Cesium/Widgets/widgets.css);
+	</style>
+	<link rel="stylesheet" type="text/css" media="all" href="./css/style.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="./css/menubutton.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="./css/jquery-ui.min.css" />
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/slidein.js"></script>
+	<script src="js/slidein2.js"></script>
+	<script src="Cesium/Cesium.js"></script>
+	<script src="http://www.google.com/jsapi"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>
 </head>
 
 <body>
-    <div class="geocode">
-        <form action="javascript:geocode()" class="textbox" />
-        <input id="inputtext" class="textbox" type="text" value="" placeholder="地名で検索" />
-        </form>
-    </div>
-    <div id="svNotAvailable" onclick="fadeInOut(svNotAvailable,0)"></div>
-    <div id="blackOut">
-        <img class="loading" src="data/loading.gif">
-    </div>
-    <div id="timeCounter"></div>
-    <div id="cesiumContainer"></div>
-    <div id="button" class="general-button">
-        <div class="button-content">
-            <span class="icon-font">menu</span>
-        </div>
-    </div>
-    <div id="button2" class="general-button" onclick="help();">
-        <div class="button-content">
-            <span class="icon-font">help</span>
-        </div>
-    </div>
-    <div id="button3" class="general-button">
-        <div class="button-content">
-            <span class="icon-font">paramater</span>
-        </div>
-    </div>
-    <div id="button4" class="general-button" onclick="streetView();">
-        <div class="button-content">
-            <span class="icon-font">car</span>
-        </div>
-    </div>
-    <div id="slide_menu"></div>
-    <div id="slide_menu2"></div>
-    <div id="streetView_wrapper">
-        <div id="streetView"></div>
-        <button class="btn" onclick="svFadeOut()">×</button>
-    </div>
+	<div class="geocode">
+		<form action="javascript:geocode()" class="textbox" />
+		<input id="inputtext" class="textbox" type="text" value="" placeholder="地名で検索" />
+	</form>
+</div>
+<div id="svNotAvailable" onclick="fadeInOut(svNotAvailable,0)"></div>
+<div id="blackOut">
+	<img class="loading" src="data/loading.gif">
+</div>
+<div id="timeCounter"></div>
+<div id="cesiumContainer"></div>
+<div id="button" class="general-button">
+	<div class="button-content">
+		<span class="icon-font">menu</span>
+	</div>
+</div>
+<div id="button2" class="general-button" onclick="help();">
+	<div class="button-content">
+		<span class="icon-font">help</span>
+	</div>
+</div>
+<div id="button3" class="general-button">
+	<div class="button-content">
+		<span class="icon-font">paramater</span>
+	</div>
+</div>
+<div id="button4" class="general-button" onclick="streetView();">
+	<div class="button-content">
+		<span class="icon-font">car</span>
+	</div>
+</div>
+<div id="slide_menu"></div>
+<div id="slide_menu2"></div>
+<div id="streetView_wrapper">
+	<div id="streetView"></div>
+	<button class="btn" onclick="svFadeOut()">×</button>
+</div>
 
 <script>
 
 //CCボタンのツールチップ化
 
 $(function() {
-    $('.license').tooltip();
+	$('.license').tooltip();
 });
 
 //スワイプによるスクロール禁止
@@ -154,7 +154,7 @@ var viewer = new Cesium.Viewer('cesiumContainer',{
 	navigationHelpButton : false,
 	navigationInstructionsInitiallyVisible : false,
 	geocoder:false,
-    homeButton:false,
+	homeButton:false,
 	animation: false,
 	sceneModePicker:false,
 	baseLayerPicker:false,
@@ -213,11 +213,11 @@ function landing(){
 function loadCzml(){			
 	var i = 0;
 	var load = setInterval(function(){
-        var czmlDataSource = new Cesium.CzmlDataSource();
+		var czmlDataSource = new Cesium.CzmlDataSource();
 		var promise = czmlDataSource.load(czmlDataArray[i].url);
 		promise.then(function(dataSource) {
 			viewer.dataSources.add(dataSource);
-            var billboardsIdsLength = czmlDataSource.entities.values.length;
+			var billboardsIdsLength = czmlDataSource.entities.values.length;
 			var i = 0;
 			while (i <= billboardsIdsLength){
 				var id = i;				
@@ -226,9 +226,9 @@ function loadCzml(){
 					var scaleByDistance = new Cesium.NearFarScalar(2.0e4,1.2,1.0e5,0.2);
 					var translucencyByDistance = new Cesium.NearFarScalar(2.0e4,1.0,2.0e5,0.6);
 					var translucencyByDistanceLabel = new Cesium.NearFarScalar(2.0e4,0.9,6.0e4,0.0);
-                    entity.billboard.scaleByDistance = scaleByDistance;
-                    entity.billboard.translucencyByDistance = translucencyByDistance;
-                    entity.polyline.translucencyByDistance = translucencyByDistance;
+					entity.billboard.scaleByDistance = scaleByDistance;
+					entity.billboard.translucencyByDistance = translucencyByDistance;
+					entity.polyline.translucencyByDistance = translucencyByDistance;
 					entity.label.translucencyByDistance = translucencyByDistanceLabel;
 				}
 				i++;
@@ -240,7 +240,7 @@ function loadCzml(){
 		if (i == czmlDataArray.length){
 			clearInterval(load);
 			setClickEvent();
-            viewer.clock.onTick.addEventListener(function(clock){
+			viewer.clock.onTick.addEventListener(function(clock){
 				var nowTime = viewer.clock.currentTime;
 				setTimeout('checkTime()',1000);
 			});
@@ -257,28 +257,28 @@ function openStreetMapLayer (){
 
 //OSMの明度を下げる
 
-    openStreetMap.brightness = 0.7;
+openStreetMap.brightness = 0.7;
 
 //OSMの不透明度をデフォルト0に
 
-	openStreetMap.alpha = 0;
+openStreetMap.alpha = 0;
 
 //オーバーレイ配列作成関数
 
-	function overlayData(_label, _value, _overlayObj, _id) {
-		this.label = _label;
-		this.value = _value;
-		this.overlayObj = _overlayObj;
-		this.id = _id;
-	}
-	overlayDataArray[0]=new overlayData("地図",0,openStreetMap,"range01");
+function overlayData(_label, _value, _overlayObj, _id) {
+	this.label = _label;
+	this.value = _value;
+	this.overlayObj = _overlayObj;
+	this.id = _id;
+}
+overlayDataArray[0]=new overlayData("地図",0,openStreetMap,"range01");
 
-	var overlayList = "";
-	for (var i=0; i<overlayDataArray.length; i++) {
-		overlayList = overlayList + '<p class="slide_label">' + overlayDataArray[i].label + '</p><input id="' + overlayDataArray[i].id + '" type="range" min="0" max="33" value="' + overlayDataArray[i].value * 0.33 + '" step="1" oninput="transParent(' + i + ');"/>';
-	}
-	var overlayListMenu = document.getElementById('slide_menu2');
-	overlayListMenu.innerHTML = overlayList;
+var overlayList = "";
+for (var i=0; i<overlayDataArray.length; i++) {
+	overlayList = overlayList + '<p class="slide_label">' + overlayDataArray[i].label + '</p><input id="' + overlayDataArray[i].id + '" type="range" min="0" max="33" value="' + overlayDataArray[i].value * 0.33 + '" step="1" oninput="transParent(' + i + ');"/>';
+}
+var overlayListMenu = document.getElementById('slide_menu2');
+overlayListMenu.innerHTML = overlayList;
 }
 
 //OSM透明度を変更する関数
@@ -370,24 +370,24 @@ function setClickEvent(){
 						streetViewWrapper.style.display = "block";
 						fadeInOut(streetViewWrapper,1);
 
-                        $(function() {
-                            $('#cesiumContainer').css('height','50%');
-                        });                       
-                        
+						$(function() {
+							$('#cesiumContainer').css('height','50%');
+						});                       
+
 						var svp = new google.maps.StreetViewPanorama(
 							document.getElementById("streetView"),{
 								position : latlng,
-                                zoomControl : false,
-                                panControl : false,
-                                addressControl : false,
-                                fullscreenControl : false
+								zoomControl : false,
+								panControl : false,
+								addressControl : false,
+								fullscreenControl : false
 							});
 					}
 				});
-            } else {
-                svFadeOut();
-            }
-        }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
+		} else {
+			svFadeOut();
+		}
+	}, Cesium.ScreenSpaceEventType.LEFT_CLICK);
 }
 
 //時間チェック
@@ -452,23 +452,21 @@ function fadeInOut(layer,param) {
 //ストビューDIVのフェードアウト関数
 
 function svFadeOut() {
-    fadeInOut(streetView_wrapper,0);
-    $(function() {
-        $('#cesiumContainer').css('height','100%');
-    });    
+	fadeInOut(streetView_wrapper,0);
+	$(function() {
+		$('#cesiumContainer').css('height','100%');
+	});    
 }
- 
+
 </script>
 
-
-
-    <div class="license">
-        <a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="首都大学東京 渡邉英徳研究室✕富士山アウトドアミュージアム 作『富士山「動物交通事故死」マップ』はクリエイティブ・コモンズ 表示 - 非営利 - 継承 4.0 国際 ライセンスで提供されています。"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"
-            /></a>
-        <br /><a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/hwtnv/cesiumGitHubPages" property="cc:attributionName"
-        rel="cc:attributionURL">首都大学東京 渡邉英徳研究室✕富士山アウトドアミュージアム</a> 作『<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Dataset"
-        property="dct:title" rel="dct:type">富士山「動物交通事故死」マップ</span>』は<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">クリエイティブ・コモンズ 表示 - 非営利 - 継承 4.0 国際 ライセンス</a>で提供されています。
-    </div>
+<div class="license">
+	<a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="首都大学東京 渡邉英徳研究室✕富士山アウトドアミュージアム 作『富士山「動物交通事故死」マップ』はクリエイティブ・コモンズ 表示 - 非営利 - 継承 4.0 国際 ライセンスで提供されています。"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"
+		/></a>
+		<br /><a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/hwtnv/cesiumGitHubPages" property="cc:attributionName"
+		rel="cc:attributionURL">首都大学東京 渡邉英徳研究室✕富士山アウトドアミュージアム</a> 作『<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Dataset"
+		property="dct:title" rel="dct:type">富士山「動物交通事故死」マップ</span>』は<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">クリエイティブ・コモンズ 表示 - 非営利 - 継承 4.0 国際 ライセンス</a>で提供されています。
+	</div>
 </body>
 
 </html>
