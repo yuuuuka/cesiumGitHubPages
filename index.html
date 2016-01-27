@@ -354,7 +354,6 @@ function setClickEvent(){
 		var pickedObject = viewer.scene.pick(click.position);
 		if (Cesium.defined(pickedObject) && (pickedObject != "")) {
 			var position = pickedObject.primitive._position;
-			console.log (position);
 			var cart = Cesium.Ellipsoid.WGS84.cartesianToCartographic(position);
 			var latlng = new google.maps.LatLng(Cesium.Math.toDegrees(cart.latitude), Cesium.Math.toDegrees(cart.longitude));
 
