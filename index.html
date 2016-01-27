@@ -375,6 +375,7 @@ function setClickEvent(){
 								position : latlng
 							});
 					}
+/*
 					var newHeading = Cesium.Math.toRadians(0);
 					var newPitch = Cesium.Math.toRadians(-30);
 					var newRange = 1000;
@@ -388,9 +389,12 @@ function setClickEvent(){
 						offset : headingPitchRange,
 						easingFunction: Cesium.EasingFunction.CUBIC_IN_OUT
 					});
+*/
 				});
-}
-}, Cesium.ScreenSpaceEventType.LEFT_DOUBLE_CLICK);
+            } else {
+                fadeInOut(streetView_wrapper,0);
+            }
+        }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
 }
 
 //時間チェック

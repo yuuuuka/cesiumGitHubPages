@@ -224,23 +224,28 @@ input {
 
 #streetView_wrapper {
 	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+	top: 110px;
+	right: 0;
+	width: 320px;
+	height: 320px;
 	display: none;
 	background-color:rgba(0,0,0,0.7);
 	z-index:20000;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    box-shadow: 0 0 8px;
 }
 #streetView {
 	position: absolute;
-	width: 80%;
-	height: 80%;
+	width: 100%;
+	height: 100%;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
 	margin: auto;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
 }
 
 .btn {
