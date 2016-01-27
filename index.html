@@ -126,7 +126,7 @@ for (var i=0; i<viewPointsArray.length; i++) {
 	dropDownList = dropDownList + '<li><a href="#" onclick = "changeViewPoint(' + i + ',' + '3.0);return false;">' + viewPointsArray[i].label + '</a></li>';
 }
 
-var viewPointChangeMenuHtml = '<ul class="viewpoint">' + dropDownList + '<hr noshade/><a href="https://github.com/hwtnv/cesiumGitHubPages" target="_blank">GitHub</a></ul>';
+var viewPointChangeMenuHtml = '<ul class="viewpoint">' + dropDownList + '</ul>';
 viewPointChangeMenu.innerHTML = viewPointChangeMenuHtml;
 
 //czml配列作成
@@ -350,6 +350,7 @@ function geocode() {
 
 function setClickEvent(){
 	var handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas);
+	var svp;
 	handler.setInputAction(function(click) {
 		var pickedObject = viewer.scene.pick(click.position);
 		if (Cesium.defined(pickedObject) && (pickedObject != "")) {
@@ -367,14 +368,12 @@ function setClickEvent(){
 						setTimeout('fadeInOut(svNotAvailable,0)',1500);
 					}
 					else{
+						delete svp;
 						streetViewWrapper.style.display = "block";
-						fadeInOut(streetViewWrapper,1);
-
 						$(function() {
 							$('#cesiumContainer').css('height','50%');
 						});                       
-
-						var svp = new google.maps.StreetViewPanorama(
+						svp = new google.maps.StreetViewPanorama(
 							document.getElementById("streetView"),{
 								position : latlng,
 								zoomControl : false,
@@ -385,7 +384,11 @@ function setClickEvent(){
 					}
 				});
 		} else {
-			svFadeOut();
+			delete svp;
+			streetViewWrapper.style.display = "none";
+			$(function() {
+				$('#cesiumContainer').css('height','100%');
+			}); 
 		}
 	}, Cesium.ScreenSpaceEventType.LEFT_CLICK);
 }
@@ -431,7 +434,7 @@ function timeCounter(displayTime){
 //ヘルプ
 
 function help(){
-	window.open('http://labo.wtnv.jp/');
+	window.open('https://github.com/hwtnv/cesiumGitHubPages');
 }
 
 //DIVのフェードイン・アウト関数
@@ -452,10 +455,7 @@ function fadeInOut(layer,param) {
 //ストビューDIVのフェードアウト関数
 
 function svFadeOut() {
-	fadeInOut(streetView_wrapper,0);
-	$(function() {
-		$('#cesiumContainer').css('height','100%');
-	});    
+
 }
 
 </script>
