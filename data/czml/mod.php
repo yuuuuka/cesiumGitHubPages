@@ -194,10 +194,21 @@ $placemarkArray = array(
     "billboard" => $billboard,
     "position" => $placemarkPoint,
     "label" => $label,
+ //   "polyline" => $polyline,
+    );
+
+$polylineArray = array(
+    "id" => 'line' . $id,
+    "availability" => $availability,
+    "name" => $billboardName,
+    "description" => $description_balloon,
+//    "billboard" => $billboard,
+//    "position" => $placemarkPoint,
+//    "label" => $label,
     "polyline" => $polyline,
     );
 
-array_push($jsonArray, $placemarkArray);
+array_push($jsonArray, $placemarkArray, $polylineArray);
 $id++;
 }
 
