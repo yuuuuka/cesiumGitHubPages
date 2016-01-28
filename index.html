@@ -445,11 +445,9 @@ function fadeInOut(layer,param) {
 function svOnOff(param) {
 	if (param == 0){
 		streetViewWrapper.style.display = "none";
-		cesiumContainer.style.height = "100%";
 		delete svp;
 	} else {
 		streetViewWrapper.style.display = "block";
-		cesiumContainer.style.height = "50%";	
 	}
 }
 
