@@ -56,7 +56,7 @@
 <div id="slide_menu2"></div>
 <div id="streetView_wrapper">
 	<div id="streetView"></div>
-	<button class="btn" onclick="svClose()">×</button>
+	<button class="btn" onclick="svOnOff(0)">×</button>
 </div>
 
 <script>
@@ -81,9 +81,14 @@ cesiumDiv.addEventListener("gestureend", preventScroll, false);
 
 //各種DIV
 
-var blackOutDiv = document.getElementById("blackOut");
 var streetViewWrapper = document.getElementById("streetView_wrapper");
-var svNotAvailable = document.getElementById("svNotAvailable");
+var cesiumContainer = document.getElementById("cesiumContainer");
+blackOutDiv = document.getElementById("blackOut");
+svNotAvailable = document.getElementById("svNotAvailable");
+
+//SV呼び出し
+
+var sv = new google.maps.StreetViewService();
 
 //SVエラーメッセージレイヤを隠す
 
@@ -137,7 +142,7 @@ czmlDataArray[0]=new czmlData("ロードキル",'data/czml/animal.czml');
 //オーバレイ配列を用意
 
 var overlayDataArray=[];
-var openStreetMap = [];
+var openStreetMap=[];
 
 //ビューア初期化	
 
@@ -345,30 +350,21 @@ function geocode() {
 
 function setClickEvent(){
 	var handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas);
-	var svp;
 	handler.setInputAction(function(click) {
 		var pickedObject = viewer.scene.pick(click.position);
 		if (Cesium.defined(pickedObject) && (pickedObject != "")) {
+			svOnOff(1);
+			delete svp;
 			var position = pickedObject.primitive._position;
 			var cart = Cesium.Ellipsoid.WGS84.cartesianToCartographic(position);
 			var latlng = new google.maps.LatLng(Cesium.Math.toDegrees(cart.latitude), Cesium.Math.toDegrees(cart.longitude));
-
-			var sv = new google.maps.StreetViewService();
-			sv.getPanoramaByLocation(latlng, 50, 
-				function (data, status) {
-					//ストリートビュー未対応エリアの場合
-					if (status != google.maps.StreetViewStatus.OK) {
-						svNotAvailable.innerHTML = '<p class="errorMessage">この場所のストリートビューは利用できません</p>';
-						fadeInOut(svNotAvailable,1);
-						setTimeout('fadeInOut(svNotAvailable,0)',1500);
-					}
-					else{
-						delete svp;
-						streetViewWrapper.style.display = "block";
-						$(function() {
-							$('#cesiumContainer').css('height','50%');
-						});                       
-						svp = new google.maps.StreetViewPanorama(
+			sv.getPanoramaByLocation(latlng, 50, function (data, status) {
+				if (status != google.maps.StreetViewStatus.OK) {
+					svNotAvailable.innerHTML = '<p class="errorMessage">この場所のストリートビューは利用できません</p>';
+					fadeInOut(svNotAvailable,1);
+					setTimeout('fadeInOut(svNotAvailable,0)',1500);
+				} else {
+					svp = new google.maps.StreetViewPanorama(
 							document.getElementById("streetView"),{
 								position : latlng,
 								zoomControl : false,
@@ -376,11 +372,10 @@ function setClickEvent(){
 								addressControl : false,
 								fullscreenControl : false
 							});
-					}
-				});
+				}
+			});
 		} else {
-			delete svp;
-			svClose();
+			svOnOff(0);
 		}
 	}, Cesium.ScreenSpaceEventType.LEFT_CLICK);
 }
@@ -436,6 +431,7 @@ function fadeInOut(layer,param) {
 		$(function() {
 			$(layer).fadeOut("slow");
 		});
+		delete layer;
 		viewer.trackedEntity = undefined;
 	} else {
 		$(function() {
@@ -446,11 +442,15 @@ function fadeInOut(layer,param) {
 
 //ストビューDIVのフェードアウト関数
 
-function svClose() {
-	streetViewWrapper.style.display = "none";
-	$(function() {
-		$('#cesiumContainer').css('height','100%');
-	}); 
+function svOnOff(param) {
+	if (param == 0){
+		streetViewWrapper.style.display = "none";
+		cesiumContainer.style.height = "100%";
+		delete svp;
+	} else {
+		streetViewWrapper.style.display = "block";
+		cesiumContainer.style.height = "50%";	
+	}
 }
 
 </script>
