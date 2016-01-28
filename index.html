@@ -365,13 +365,13 @@ function setClickEvent(){
 					setTimeout('fadeInOut(svNotAvailable,0)',1500);
 				} else {
 					svp = new google.maps.StreetViewPanorama(
-							document.getElementById("streetView"),{
-								position : latlng,
-								zoomControl : false,
-								panControl : false,
-								addressControl : false,
-								fullscreenControl : false
-							});
+						document.getElementById("streetView"),{
+							position : latlng,
+							zoomControl : false,
+							panControl : false,
+							addressControl : false,
+							fullscreenControl : false
+						});
 				}
 			});
 		} else {
