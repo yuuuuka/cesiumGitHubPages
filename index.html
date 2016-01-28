@@ -61,6 +61,17 @@
 
 <script>
 
+//画面サイズ取得
+
+var smallScreen = 0;
+
+var screenWidth = window.parent.screen.width;
+if (screenWidth <= 640) {
+	smallScreen = 1;
+} else {
+	smallScreen = 0;
+}
+
 //CCボタンのツールチップ化
 
 $(function() {
@@ -96,6 +107,15 @@ $(function() {
 	$(svNotAvailable).hide();
 	$('#button4').hide();
 });
+
+//SVのonoff状態パラメータ
+
+var svWindow = 0;
+
+//視点復帰時のカメラパラメータ格納配列
+
+var cameraPosWC = [];
+var cameraOrientation = [];
 
 //停止時間
 
@@ -224,7 +244,11 @@ function loadCzml(){
 				var entity = czmlDataSource.entities.getById(id);
 
 				if (entity) {
-					var scaleByDistance = new Cesium.NearFarScalar(2.0e4,1.2,1.0e5,0.2);
+					if (smallScreen == 0){
+						var scaleByDistance = new Cesium.NearFarScalar(2.0e4,1.2,1.0e5,0.2);
+					} else {
+						var scaleByDistance = new Cesium.NearFarScalar(2.0e4,1.0,1.0e5,0.2);
+					}
 					var translucencyByDistance = new Cesium.NearFarScalar(2.0e4,1.0,2.0e5,0.6);
 					var translucencyByDistanceLabel = new Cesium.NearFarScalar(2.0e4,0.9,6.0e4,0.0);
 					entity.billboard.scaleByDistance = scaleByDistance;
@@ -354,6 +378,10 @@ function setClickEvent(){
 	handler.setInputAction(function(click) {
 		var pickedObject = viewer.scene.pick(click.position);
 		if (Cesium.defined(pickedObject) && (pickedObject != "")) {
+			if (svWindow == 0){
+				cameraPosWC = [viewer.camera.positionWC.x,viewer.camera.positionWC.y,viewer.camera.positionWC.z];
+				cameraOrientation = [viewer.camera.heading,viewer.camera.pitch,viewer.camera.roll];
+			}
 			svOnOff(1);
 			delete svp;
 			var position = pickedObject.primitive._position;
@@ -462,8 +490,20 @@ function svOnOff(param) {
 	if (param == 0){
 		streetViewWrapper.style.display = "none";
 		delete svp;
+		viewer.camera.flyTo({
+			destination : new Cesium.Cartesian3(cameraPosWC[0],cameraPosWC[1],cameraPosWC[2]),
+			orientation : {
+				heading : cameraOrientation[0],
+				pitch : cameraOrientation[1],
+				roll : 0.0,
+				duration : 2.0,
+				easingFunction: Cesium.EasingFunction.CUBIC_IN_OUT
+			}
+		});
+		svWindow = 0;
 	} else {
 		streetViewWrapper.style.display = "block";
+		svWindow = 1;
 	}
 }
 
