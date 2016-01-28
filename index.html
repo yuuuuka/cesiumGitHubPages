@@ -218,19 +218,22 @@ function loadCzml(){
 		promise.then(function(dataSource) {
 			viewer.dataSources.add(dataSource);
 			var billboardsIdsLength = czmlDataSource.entities.values.length;
-			var i = 0;
-			while (i <= billboardsIdsLength){
-				var id = i;				
+			console.log (billboardsIdsLength);
+			var i = 1;
+			while (i <= 0.5 * billboardsIdsLength){
+				var id = i;
+				console.log (id);			
 				var entity = czmlDataSource.entities.getById(id);
+
 				if (entity) {
 					var scaleByDistance = new Cesium.NearFarScalar(2.0e4,1.2,1.0e5,0.2);
 					var translucencyByDistance = new Cesium.NearFarScalar(2.0e4,1.0,2.0e5,0.6);
 					var translucencyByDistanceLabel = new Cesium.NearFarScalar(2.0e4,0.9,6.0e4,0.0);
 					entity.billboard.scaleByDistance = scaleByDistance;
 					entity.billboard.translucencyByDistance = translucencyByDistance;
-					entity.polyline.translucencyByDistance = translucencyByDistance;
 					entity.label.translucencyByDistance = translucencyByDistanceLabel;
 				}
+
 				i++;
 			}
 		}).otherwise(function(error){
@@ -357,7 +360,9 @@ function setClickEvent(){
 			delete svp;
 			var position = pickedObject.primitive._position;
 			var cart = Cesium.Ellipsoid.WGS84.cartesianToCartographic(position);
-			var latlng = new google.maps.LatLng(Cesium.Math.toDegrees(cart.latitude), Cesium.Math.toDegrees(cart.longitude));
+			var cartLon = Cesium.Math.toDegrees(cart.longitude);
+			var cartLat = Cesium.Math.toDegrees(cart.latitude);
+			var latlng = new google.maps.LatLng(cartLat,cartLon);
 			sv.getPanoramaByLocation(latlng, 50, function (data, status) {
 				if (status != google.maps.StreetViewStatus.OK) {
 					svNotAvailable.innerHTML = '<p class="errorMessage">この場所のストリートビューは利用できません</p>';
@@ -373,11 +378,24 @@ function setClickEvent(){
 							fullscreenControl : false
 						});
 				}
+				var newHeading = Cesium.Math.toRadians(0);
+				var newPitch = Cesium.Math.toRadians(-45);
+				var newRange = 4000;
+
+				var centerCartesian = new Cesium.Cartesian3.fromDegrees(cartLon,cartLat,750);
+				var boundingSphere = new Cesium.BoundingSphere(centerCartesian, 1000);
+				var headingPitchRange = new Cesium.HeadingPitchRange(newHeading, newPitch, newRange);
+
+				viewer.camera.flyToBoundingSphere(boundingSphere,{
+					duration : 1.5,
+					offset : headingPitchRange,
+					easingFunction: Cesium.EasingFunction.CUBIC_IN_OUT
+				});
 			});
-		} else {
-			svOnOff(0);
-		}
-	}, Cesium.ScreenSpaceEventType.LEFT_CLICK);
+} else {
+	svOnOff(0);
+}
+}, Cesium.ScreenSpaceEventType.LEFT_CLICK);
 }
 
 //時間チェック
