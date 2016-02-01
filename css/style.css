@@ -130,7 +130,7 @@ button.cesium-infoBox-close {
 }
 #buttonGeo {
 	position:absolute;
-	bottom:8px;
+	bottom:44px;
 	left:50%;
 	margin-left:-20px;
 	opacity:0.9;

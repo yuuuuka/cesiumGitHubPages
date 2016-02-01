@@ -61,6 +61,11 @@
 		<span class="icon-font">paramater</span>
 	</div>
 </div>
+<div id="buttonGeo" class="general-button" onclick="flyToMyLocation();">
+	<div class="button-content">
+		<span class="icon-font">geo</span>
+	</div>
+</div>
 <div id="slide_menu"></div>
 <div id="slide_menu2"></div>
 <div id="streetView_wrapper">
@@ -480,6 +485,18 @@ function checkTime() {
 function timeCounter(displayTime){
 	var timeCounter = document.getElementById("timeCounter");
 	timeCounter.innerHTML = '<p class="timeCounter">' + displayTime +'</p>';
+}
+
+//現在地へ移動
+
+function flyToMyLocation() {
+	function fly(position) {
+		viewer.camera.flyTo({
+			destination : Cesium.Cartesian3.fromDegrees(position.coords.longitude, position.coords.latitude, 750.0),
+			easingFunction: Cesium.EasingFunction.CUBIC_IN_OUT
+		});
+	}
+	navigator.geolocation.getCurrentPosition(fly);
 }
 
 //ヘルプ
