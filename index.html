@@ -492,7 +492,7 @@ function timeCounter(displayTime){
 function flyToMyLocation() {
 	function fly(position) {
 		viewer.camera.flyTo({
-			destination : Cesium.Cartesian3.fromDegrees(position.coords.longitude, position.coords.latitude, 750.0),
+			destination : Cesium.Cartesian3.fromDegrees(position.coords.longitude, position.coords.latitude, 1500.0),
 			easingFunction: Cesium.EasingFunction.CUBIC_IN_OUT
 		});
 	}
