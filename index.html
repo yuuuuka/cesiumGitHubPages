@@ -107,9 +107,11 @@ cesiumDiv.addEventListener("gestureend", preventScroll, false);
 //各種DIV
 
 var streetViewWrapper = document.getElementById("streetView_wrapper");
+var streetViewDiv = document.getElementById("streetView");
 var cesiumContainer = document.getElementById("cesiumContainer");
 blackOutDiv = document.getElementById("blackOut");
 svNotAvailable = document.getElementById("svNotAvailable");
+svp = '';
 
 //SV呼び出し
 
@@ -407,21 +409,22 @@ function setClickEvent(){
 				cameraOrientation = [viewer.camera.heading,viewer.camera.pitch,viewer.camera.roll];
 			}
 			svOnOff(1);
+            streetViewDiv.innerHTML = null;
 			delete svp;
 			var position = pickedObject.primitive._position;
 			var cart = Cesium.Ellipsoid.WGS84.cartesianToCartographic(position);
 			var cartLon = Cesium.Math.toDegrees(cart.longitude);
 			var cartLat = Cesium.Math.toDegrees(cart.latitude);
 			var latlng = new google.maps.LatLng(cartLat,cartLon);
-			sv.getPanoramaByLocation(latlng, 50, function (data, status) {
+			sv.getPanoramaByLocation(latlng, 200, function (data, status) {
 				if (status != google.maps.StreetViewStatus.OK) {
 					svNotAvailable.innerHTML = '<p class="errorMessage">この場所のストリートビューは利用できません</p>';
 					fadeInOut(svNotAvailable,1);
 					setTimeout('fadeInOut(svNotAvailable,0)',1500);
 				} else {
 					svp = new google.maps.StreetViewPanorama(
-						document.getElementById("streetView"),{
-							position : latlng,
+						streetViewDiv,{
+							position : data.location.latLng,
 							zoomControl : false,
 							panControl : false,
 							addressControl : false,
@@ -532,7 +535,8 @@ function fadeInOut(layer,param) {
 function svOnOff(param) {
 	if (param == 0){
 		streetViewWrapper.style.display = "none";
-		delete svp;
+        streetViewDiv.innerHTML = null;
+        delete svp;
 		viewer.camera.flyTo({
 			destination : new Cesium.Cartesian3(cameraPosWC[0],cameraPosWC[1],cameraPosWC[2]),
 			orientation : {
