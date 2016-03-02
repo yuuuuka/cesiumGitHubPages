@@ -124,24 +124,14 @@ $(function() {
 	$('#button4').hide();
 });
 
-//2Dモード状態パラメータ
-
-var mode2D = 0;
-
 //SVのonoff状態パラメータ
 
 var svWindow = 0;
 
-//視点復帰時のカメラパラメータ格納配列（3D）
+//視点復帰時のカメラパラメータ格納配列
 
 var cameraPosWC = [];
 var cameraOrientation = [];
-
-//視点復帰時のカメラパラメータ格納配列（2D）
-
-var cartLon;
-var cartLat;
-var cameraMagnitude;
 
 //停止時間
 
@@ -206,9 +196,6 @@ var viewer = new Cesium.Viewer('cesiumContainer',{
 	baseLayerPicker:false,
 	scene3DOnly : true
 });
-
-viewer.scene.morphTo2D(0);
-mode2D = 1;
 
 //地形にエンティティが潜るように設定
 
@@ -309,7 +296,6 @@ function loadCzml(){
 				setTimeout('checkTime()',1000);
 			});
 			setTimeout('fadeInOut(blackOutDiv,0)',3000);
-            setTimeout('viewer.clock.shouldAnimate = true',5000);
 		}
 	}, 200);
 }
@@ -411,7 +397,7 @@ function geocode() {
 		);
 }
 
-//ストビューを表示する関数
+//ダブルクリックでストビューを表示する関数
 
 function setClickEvent(){
 	var handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas);
@@ -427,9 +413,8 @@ function setClickEvent(){
 			delete svp;
 			var position = pickedObject.primitive._position;
 			var cart = Cesium.Ellipsoid.WGS84.cartesianToCartographic(position);
-			cartLon = Cesium.Math.toDegrees(cart.longitude);
-			cartLat = Cesium.Math.toDegrees(cart.latitude);
-            cameraMagnitude = viewer.camera.getMagnitude();
+			var cartLon = Cesium.Math.toDegrees(cart.longitude);
+			var cartLat = Cesium.Math.toDegrees(cart.latitude);
 			var latlng = new google.maps.LatLng(cartLat,cartLon);
 			sv.getPanoramaByLocation(latlng, 200, function (data, status) {
 				if (status != google.maps.StreetViewStatus.OK) {
@@ -552,27 +537,16 @@ function svOnOff(param) {
 		streetViewWrapper.style.display = "none";
         streetViewDiv.innerHTML = null;
         delete svp;
-        if (mode2D == 0){
-            viewer.camera.flyTo({
-                destination : new Cesium.Cartesian3(cameraPosWC[0],cameraPosWC[1],cameraPosWC[2]),
-                orientation : {
-                    heading : cameraOrientation[0],
-                    pitch : cameraOrientation[1],
-                    roll : 0.0,
-                    duration : 1.5,
-                    easingFunction: Cesium.EasingFunction.CUBIC_IN_OUT
-                }
-            });
-        } else {
-           viewer.camera.flyTo({
-				destination : new Cesium.Cartesian3.fromDegrees(cartLon,cartLat,cameraMagnitude),
-				orientation : {
-					heading : 0,
-					duration : 2.0,
-					easingFunction: Cesium.EasingFunction.CUBIC_IN_OUT
-				}
-			});
-        }
+		viewer.camera.flyTo({
+			destination : new Cesium.Cartesian3(cameraPosWC[0],cameraPosWC[1],cameraPosWC[2]),
+			orientation : {
+				heading : cameraOrientation[0],
+				pitch : cameraOrientation[1],
+				roll : 0.0,
+				duration : 1.5,
+				easingFunction: Cesium.EasingFunction.CUBIC_IN_OUT
+			}
+		});
 		svWindow = 0;
 	} else {
 		streetViewWrapper.style.display = "block";
