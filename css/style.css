@@ -135,7 +135,18 @@ button.cesium-infoBox-close {
 	margin-left:-20px;
 	opacity:0.9;
 }
-
+#sceneModeButton3D {
+	position:absolute;
+	top:8px;
+	right:100px;
+	z-index:10100;
+}
+#sceneModeButton2D {
+	position:absolute;
+	top:8px;
+	right:100px;
+	z-index:10100;
+}
 /*スライドメニュー群*/
 
 #slide_menu{
