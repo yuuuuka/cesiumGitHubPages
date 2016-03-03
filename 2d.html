@@ -210,6 +210,7 @@ var viewer = new Cesium.Viewer('cesiumContainer',{
 });
 
 viewer.scene.morphTo2D(0);
+viewer.scene.screenSpaceCameraController.enableRotate = false;
 
 //地形にエンティティが潜るように設定
 
