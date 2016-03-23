@@ -80,7 +80,20 @@
 
 <script>
 
-//画面サイズ取得
+//端末・画面サイズ取得
+
+var mobile = 0;
+
+var getDevice = (function(){
+	var ua = navigator.userAgent;
+	if(ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0){
+		mobile = 1;
+	}else if(ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0){
+		mobile = 2;
+	}else{
+		mobile = 0;
+	}
+})();
 
 var smallScreen = 0;
 
@@ -89,6 +102,27 @@ if (screenWidth <= 640) {
 	smallScreen = 1;
 } else {
 	smallScreen = 0;
+}
+
+//画面サイズ調整
+
+if (mobile != 1) {
+    setTimeout('resizeWindow()',0);
+} else {
+    setTimeout('resizeWindow()',1000);		
+}
+     
+function resizeWindow(){
+    if (mobile != 0){
+        var screenWidth = window.innerWidth;
+        var screenHeight = window.innerHeight;
+        $(function() {
+            document.body.style.height = screenHeight;
+            $('#cesiumContainer').height(screenHeight);
+            $('#blackOut').height(screenHeight);
+        });
+    }
+    setTimeout('loadCesium()',100);
 }
 
 //CCボタンのツールチップ化
@@ -185,67 +219,72 @@ czmlDataArray[0]=new czmlData("ロードキル",'data/czml/animal.czml');
 var overlayDataArray=[];
 var openStreetMap=[];
 
-//ビューア初期化	
+//ビューア初期化
 
-var viewer = new Cesium.Viewer('cesiumContainer',{
-	imageryProvider : new Cesium.ArcGisMapServerImageryProvider({
-		url : '//server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer',
-		enablePickFeatures : false
-	}),
-	navigationHelpButton : false,
-	navigationInstructionsInitiallyVisible : false,
-	geocoder:false,
-	homeButton:false,
-	animation: false,
-	sceneModePicker:false,
-	baseLayerPicker:false,
-	scene3DOnly : true
-});
+var viewer;
+var layers;
 
-//地形にエンティティが潜るように設定
+function loadCesium(){
+    viewer = new Cesium.Viewer('cesiumContainer',{
+        imageryProvider : new Cesium.ArcGisMapServerImageryProvider({
+            url : '//server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer',
+            enablePickFeatures : false
+        }),
+        navigationHelpButton : false,
+        navigationInstructionsInitiallyVisible : false,
+        geocoder:false,
+        homeButton:false,
+        animation: false,
+        sceneModePicker:false,
+        baseLayerPicker:false,
+        scene3DOnly : true
+    });
 
-viewer.scene.globe.depthTestAgainstTerrain = true;
+    //地形にエンティティが潜るように設定
 
-//地形メッシュを設定
+    viewer.scene.globe.depthTestAgainstTerrain = true;
 
-var cesiumTerrainProviderMeshes = new Cesium.CesiumTerrainProvider({
-	url : '//assets.agi.com/stk-terrain/world',
-	requestWaterMask : false,
-	requestVertexNormals : false
-});
-viewer.terrainProvider = cesiumTerrainProviderMeshes;
+    //地形メッシュを設定
 
-//地形を強調する際は値を変更
+    var cesiumTerrainProviderMeshes = new Cesium.CesiumTerrainProvider({
+        url : '//assets.agi.com/stk-terrain/world',
+        requestWaterMask : false,
+        requestVertexNormals : false
+    });
+    viewer.terrainProvider = cesiumTerrainProviderMeshes;
 
-viewer.terrainExaggeration = 1.0;
+    //地形を強調する際は値を変更
 
-//フォグ
+    viewer.terrainExaggeration = 1.0;
 
-var fog = new Cesium.Fog();
-fog.density = 0.0005;
-fog.screenSpaceErrorFactor = 100.0;
+    //フォグ
 
-//devicePixelRatioの設定
-/*
-if(Cesium.FeatureDetection.supportsImageRenderingPixelated()){
-	viewer.resolutionScale = window.devicePixelRatio;
+    var fog = new Cesium.Fog();
+    fog.density = 0.0005;
+    fog.screenSpaceErrorFactor = 100.0;
+
+    //devicePixelRatioの設定
+    /*
+    if(Cesium.FeatureDetection.supportsImageRenderingPixelated()){
+        viewer.resolutionScale = window.devicePixelRatio;
+    }
+    */
+    //ダブルクリック操作不可
+
+    viewer.screenSpaceEventHandler.removeInputAction(Cesium.ScreenSpaceEventType.LEFT_DOUBLE_CLICK);
+
+    //起動シークエンス
+
+    $(function() {
+        $('.cesium-widget-credits').css('display', 'none');
+    });
+
+    fadeInOut(blackOutDiv,0);
+
+    layers = viewer.scene.imageryLayers;
+    changeViewPoint(2,0);
+    setTimeout('groundZero()',1000);
 }
-*/
-//ダブルクリック操作不可
-
-viewer.screenSpaceEventHandler.removeInputAction(Cesium.ScreenSpaceEventType.LEFT_DOUBLE_CLICK);
-
-//起動シークエンス
-
-$(function() {
-	$('.cesium-widget-credits').css('display', 'none');
-});
-
-fadeInOut(blackOutDiv,0);
-
-var layers = viewer.scene.imageryLayers;
-changeViewPoint(2,0);
-setTimeout('groundZero()',1000);
 
 function groundZero(){
 	changeViewPoint(0,3);
