@@ -11,7 +11,7 @@
 	<title>富士山「動物交通事故死」マップ</title>
 	<link rel="SHORTCUT ICON" href="http://shinsai.mapping.jp/favicon.ico">
 	<style>
-	@import url(Cesium/Widgets/widgets.css);
+		@import url(Cesium/Widgets/widgets.css);
 	</style>
 	<link rel="stylesheet" type="text/css" media="all" href="./css/style.css" />
 	<link rel="stylesheet" type="text/css" media="all" href="./css/menubutton.css" />
@@ -38,46 +38,49 @@
 	<div class="geocode">
 		<form action="javascript:geocode()" class="textbox" />
 		<input id="inputtext" class="textbox" type="text" value="" placeholder="地名で検索" />
-	</form>
-</div>
-<div id="svNotAvailable" onclick="fadeInOut(svNotAvailable,0)"></div>
-<div id="blackOut">
-	<img class="loading" src="data/loading.gif">
-</div>
-<div id="cesiumContainer"></div>
-<div id="button" class="general-button">
-	<div class="button-content">
-		<span class="icon-font">menu</span>
+		</form>
 	</div>
-</div>
-<div id="button2" class="general-button" onclick="help();">
-	<div class="button-content">
-		<span class="icon-font">help</span>
+	<div id="svNotAvailable" onclick="fadeInOut(svNotAvailable,0)"></div>
+	<div id="blackOut">
+		<img class="loading" src="data/loading.gif">
 	</div>
-</div>
-<div id="button3" class="general-button">
-	<div class="button-content">
-		<span class="icon-font">paramater</span>
+	<div id="cesiumContainer"></div>
+	<div id="button" class="general-button">
+		<div class="button-content">
+			<span class="icon-font">menu</span>
+		</div>
 	</div>
-</div>
-<div id="buttonGeo" class="general-button" onclick="flyToMyLocation();">
-	<div class="button-content">
-		<span class="icon-font">geo</span>
+	<div id="button2" class="general-button" onclick="help();">
+		<div class="button-content">
+			<span class="icon-font">help</span>
+		</div>
 	</div>
-</div>
-<div id="sceneModeButton3D" class="general-button" onclick="sceneModeChange('3d');">
-    <div class="button-content">
-        <span class="icon-font">earth</span>
-    </div>
-</div>
-<div id="slide_menu"></div>
-<div id="slide_menu2"></div>
-<div id="streetView_wrapper">
-	<div id="streetView"></div>
-	<button class="btn" onclick="svOnOff(0)">×</button>
-</div>
+	<div id="button3" class="general-button">
+		<div class="button-content">
+			<span class="icon-font">paramater</span>
+		</div>
+	</div>
+	<div id="buttonGeo" class="general-button" onclick="flyToMyLocation();">
+		<div class="button-content">
+			<span class="icon-font">geo</span>
+		</div>
+	</div>
+	<div id="sceneModeButton3D" class="general-button" onclick="sceneModeChange('3d');">
+		<div class="button-content">
+			<span class="icon-font">earth</span>
+		</div>
+	</div>
+	<div id="slide_menu"></div>
+	<div id="slide_menu2"></div>
+	<div id="streetView_wrapper">
+		<div id="streetView"></div>
+		<button class="btn" onclick="svOnOff(0)">×</button>
+	</div>
+	<div id="osmCredit2d">
+		<a href="https://www.openstreetmap.org/copyright" target="_blank">MapData: © OpenStreetMap contributors</a>
+	</div>
 
-<script>
+	<script>
 
 //端末・画面サイズ取得
 
@@ -611,12 +614,11 @@ function svOnOff(param) {
 
 </script>
 
-<div class="license">
-	<a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="首都大学東京 渡邉英徳研究室✕富士山アウトドアミュージアム 作『富士山「動物交通事故死」マップ』はクリエイティブ・コモンズ 表示 - 非営利 - 継承 4.0 国際 ライセンスで提供されています。"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"
-		/></a>
+	<div class="license">
+		<a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="首都大学東京 渡邉英徳研究室✕富士山アウトドアミュージアム 作『富士山「動物交通事故死」マップ』はクリエイティブ・コモンズ 表示 - 非営利 - 継承 4.0 国際 ライセンスで提供されています。"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
 		<br /><a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/hwtnv/cesiumGitHubPages" property="cc:attributionName"
-		rel="cc:attributionURL">首都大学東京 渡邉英徳研究室✕富士山アウトドアミュージアム</a> 作『<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Dataset"
-		property="dct:title" rel="dct:type">富士山「動物交通事故死」マップ</span>』は<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">クリエイティブ・コモンズ 表示 - 非営利 - 継承 4.0 国際 ライセンス</a>で提供されています。
+			rel="cc:attributionURL">首都大学東京 渡邉英徳研究室✕富士山アウトドアミュージアム</a> 作『<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Dataset"
+			property="dct:title" rel="dct:type">富士山「動物交通事故死」マップ</span>』は<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">クリエイティブ・コモンズ 表示 - 非営利 - 継承 4.0 国際 ライセンス</a>で提供されています。
 	</div>
 </body>
 

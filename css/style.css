@@ -384,3 +384,25 @@ input {
 .cesium-timeline-bar{
     background:rgba(0,0,0,0.4);
 }
+
+/* OSMクレジット */
+
+#osmCredit {
+    position:absolute;
+    bottom:30px;
+    right:2px;
+    font-size:8px;
+    z-index:20000;
+    margin:0;
+    padding:0;
+}
+
+#osmCredit2d {
+    position:absolute;
+    bottom:2px;
+    right:2px;
+    font-size:8px;
+    z-index:20000;
+    margin:0;
+    padding:0;
+}
