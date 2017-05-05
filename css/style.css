@@ -153,9 +153,9 @@ button.cesium-infoBox-close {
 #slideMenuCheckBox{
     position: fixed;
     top: 48px;
-    left: -200px;
+    left: 8px;
     width: 150px;
-    opacity:0.8;
+    opacity:0.6;
     padding:4px 0px 4px 2px;
     margin:0px;
     margin-bottom:0px;
@@ -164,6 +164,7 @@ button.cesium-infoBox-close {
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
+	display:none;
 }
 
 #slideMenuLayer{

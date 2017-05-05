@@ -259,6 +259,7 @@
 				requestVertexNormals: false
 			});
 			viewer.terrainProvider = cesiumTerrainProviderMeshes;
+			viewer.terrainProvider.heightmapTerrainQuality = 0.1;
 
 			//地形を強調する際は値を変更
 
@@ -327,6 +328,7 @@
 					});
 					dataSources();
 					setTimeout('fadeInOut(blackOutDiv,0)', 1000);
+					setTimeout('fadeInOut(dataSourceMenu,1)',5000);
 				}
 			}, 200);
 		}
