@@ -110,13 +110,13 @@ button.cesium-infoBox-close {
 	left:8px;
 	z-index:10005;
 }
-#button2 {
+#buttonHelp {
 	position:absolute;
 	top:8px;
 	right:8px;
 	z-index:10005;
 }
-#button3 {
+#buttonLayer {
 	position:absolute;
 	top:8px;
 	right:54px;
@@ -136,13 +136,13 @@ button.cesium-infoBox-close {
 	margin-left:-20px;
 	opacity:0.9;
 }
-#sceneModeButton3D {
+#sceneModebuttonLayerD {
 	position:absolute;
 	top:8px;
 	right:100px;
 	z-index:10100;
 }
-#sceneModeButton2D {
+#sceneModebuttonHelpD {
 	position:absolute;
 	top:8px;
 	right:100px;
@@ -150,23 +150,23 @@ button.cesium-infoBox-close {
 }
 /*スライドメニュー群*/
 
-#slide_menu{
+#slideMenuCheckBox{
     position: fixed;
     top: 48px;
     left: -200px;
-    width: 80px;
+    width: 150px;
     opacity:0.8;
-    padding:0px 0px 20px 0px;
+    padding:4px 0px 4px 2px;
     margin:0px;
     margin-bottom:0px;
     background:white;
-    text-align:center;
+    text-align:left;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
 }
 
-#slide_menu2{
+#slideMenuLayer{
     position: fixed;
     top: 48px;
     right: -200px;
@@ -183,21 +183,20 @@ button.cesium-infoBox-close {
 	z-index:10005;
 }
 
-.viewpoint {
-    padding: 0;
-    margin: 20px 0px 0px 0px;
-    font-size:11px;
-    list-style-type:none;
-    line-height:1.7em;
-    text-indent:0px;
-    background:white;
+input {
+	margin:2px 0px 0px 0px;
+	padding:0px;
 }
 
-.slide_label{
-	font-size:11px;
+label{
+	font-size:10px;
 	margin:0px 0px 2px 0px;
 	padding:0px;
 	height:12px;
+}
+
+label, input[type='checkbox'] {
+    cursor: pointer;
 }
 
 #slider {
@@ -228,12 +227,6 @@ button.cesium-infoBox-close {
 	left:50%;
 	margin-top:-40px;
 	margin-left:-40px;
-}
-
-input {
-	margin:2px 0px 0px 0px;
-	padding:0px;
-	width: 100px !important;
 }
 
 /*ジオコーディング*/
@@ -337,7 +330,7 @@ input {
 
 #timeCounter {
     width:160px;
-    height16px;
+    height:16px;
     position:absolute;
     bottom:14px;
     left:50%;

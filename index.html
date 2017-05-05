@@ -50,15 +50,15 @@
 	<div id="cesiumContainer"></div>
 	<div id="button" class="general-button">
 		<div class="button-content">
-			<span class="icon-font">menu</span>
+			<span class="icon-font">list</span>
 		</div>
 	</div>
-	<div id="button2" class="general-button" onclick="help();">
+	<div id="buttonHelp" class="general-button" onclick="help();">
 		<div class="button-content">
 			<span class="icon-font">help</span>
 		</div>
 	</div>
-	<div id="button3" class="general-button">
+	<div id="buttonLayer" class="general-button">
 		<div class="button-content">
 			<span class="icon-font">paramater</span>
 		</div>
@@ -68,13 +68,8 @@
 			<span class="icon-font">geo</span>
 		</div>
 	</div>
-	<div id="sceneModeButton2D" class="general-button" onclick="sceneModeChange('2d');">
-		<div class="button-content">
-			<span class="icon-font">map</span>
-		</div>
-	</div>
-	<div id="slide_menu"></div>
-	<div id="slide_menu2"></div>
+	<div id="slideMenuCheckBox"></div>
+	<div id="slideMenuLayer"></div>
 	<div id="streetView_wrapper">
 		<div id="streetView"></div>
 		<button class="btn" onclick="svOnOff(0)">×</button>
@@ -164,7 +159,6 @@
 
 		$(function () {
 			$(svNotAvailable).hide();
-			$('#button4').hide();
 		});
 
 		//SVのonoff状態パラメータ
@@ -198,7 +192,8 @@
 
 		//視点メニュー作成
 
-		var viewPointChangeMenu = document.getElementById('slide_menu');
+		/*
+		var viewPointChangeMenu = document.getElementById('slideMenuCheckBox');
 		var dropDownList = "";
 
 		for (var i = 0; i < viewPointsArray.length; i++) {
@@ -207,6 +202,7 @@
 
 		var viewPointChangeMenuHtml = '<ul class="viewpoint">' + dropDownList + '</ul>';
 		viewPointChangeMenu.innerHTML = viewPointChangeMenuHtml;
+		*/
 
 		//czml配列作成
 
@@ -222,9 +218,22 @@
 		czmlDataArray[3] = new czmlData("ニホンリス・ネズミ類", 'data/czml/risu.czml');
 		czmlDataArray[4] = new czmlData("ネコ・イヌ", 'data/czml/neko.czml');
 		czmlDataArray[5] = new czmlData("ノウサギ", 'data/czml/usagi.czml');
-		czmlDataArray[6] = new czmlData("ホンドテン・ハクビシン・アナグマ", 'data/czml/itachi.czml');
+		czmlDataArray[6] = new czmlData("テン・ハクビシン・アナグマ", 'data/czml/itachi.czml');
 		czmlDataArray[7] = new czmlData("両生類・爬虫類", 'data/czml/kaeru.czml');
 		czmlDataArray[8] = new czmlData("不明・判別不能", 'data/czml/circle.czml');
+
+		//レイヤ切り替えメニュー作成
+
+		var dataSourceMenu = document.getElementById('slideMenuCheckBox');
+		var czmlSourceList = "";
+
+		for (var i = 0; i < czmlDataArray.length; i++) {
+			czmlSourceList = czmlSourceList + '<label for="' + czmlDataArray[i].label + '"><input type="checkbox" class="chbox" checked="checked" id="' + czmlDataArray[i].label + '">' + czmlDataArray[i].label + '</label><br />';
+		}
+
+		var dataSourceListHtml = '<form name="check_box">' + czmlSourceList + '</form>';
+		dataSourceMenu.innerHTML = dataSourceListHtml;
+
 
 		//オーバレイ配列を用意
 
@@ -330,6 +339,7 @@
 						var nowTime = viewer.clock.currentTime;
 						setTimeout('checkTime()', 1000);
 					});
+					dataSources();
 					setTimeout('fadeInOut(blackOutDiv,0)', 3000);
 				}
 			}, 200);
@@ -363,7 +373,7 @@
 			for (var i = 0; i < overlayDataArray.length; i++) {
 				overlayList = overlayList + '<p class="slide_label">' + overlayDataArray[i].label + '</p><input id="' + overlayDataArray[i].id + '" type="range" min="0" max="33" value="' + overlayDataArray[i].value * 0.33 + '" step="1" oninput="transParent(' + i + ');"/>';
 			}
-			var overlayListMenu = document.getElementById('slide_menu2');
+			var overlayListMenu = document.getElementById('slideMenuLayer');
 			overlayListMenu.innerHTML = overlayList;
 		}
 
@@ -543,17 +553,6 @@
 			navigator.geolocation.getCurrentPosition(fly);
 		}
 
-		//scneMode変更
-
-		function sceneModeChange(mode) {
-
-			if (mode == '2d') {
-				location.href = "2d.html";
-			} else {
-				location.href = "index.html";
-			}
-		}
-
 		//ヘルプ
 
 		function help() {
@@ -598,6 +597,22 @@
 				streetViewWrapper.style.display = "block";
 				svWindow = 1;
 			}
+		}
+
+		//レイヤ切り替え
+		function dataSources(){
+		var dataSources = viewer.dataSources._dataSources;
+
+		$("#slideMenuCheckBox :checkbox").click(function () {
+			var elements = document.getElementsByClassName("chbox");
+			for (var i = 0, l = elements.length; l > i; i++) {
+				if (elements[i].checked) {
+					dataSources[i].show = true;
+				} else {
+					dataSources[i].show = false;
+				}
+			}
+		})
 		}
 
 	</script>
