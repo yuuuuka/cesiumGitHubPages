@@ -221,7 +221,6 @@
 		var dataSourceListHtml = '<form name="check_box">' + czmlSourceList + '</form>';
 		dataSourceMenu.innerHTML = dataSourceListHtml;
 
-
 		//オーバレイ配列を用意
 
 		var overlayDataArray = [];
@@ -327,7 +326,7 @@
 						setTimeout('checkTime()', 1000);
 					});
 					dataSources();
-					setTimeout('fadeInOut(blackOutDiv,0)', 3000);
+					setTimeout('fadeInOut(blackOutDiv,0)', 1000);
 				}
 			}, 200);
 		}
@@ -492,8 +491,10 @@
 
 		//時間チェック
 
+		var displayTime;
+
 		function checkTime() {
-			viewer.clock.multiplier = 3000 * 60 * 60;
+			viewer.clock.multiplier = 5000 * 60 * 60;
 
 			var now = viewer.clock.currentTime;
 			var stop = Cesium.JulianDate.fromIso8601(stopISO);
@@ -517,8 +518,11 @@
 			if (d < 10) {
 				d = '0' + d;
 			}
-			var displayTime = y + '年' + m + '月' + d + '日';
-			timeCounter(displayTime);
+			var timeString = y + '年' + m + '月' + d + '日';
+			if (timeString != displayTime){
+				displayTime = timeString;
+				timeCounter(displayTime);
+			}
 		}
 
 		//カウンター表示
