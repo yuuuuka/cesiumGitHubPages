@@ -9,7 +9,7 @@
         "availability": "2014-12-30T07:17:00+09:00/2017-04-28T23:59:59+09:00",
         "name": "ノウサギ",
         "description": "<p class=\"date\">2014.12.30 07:17</p>",
-        "billboard": {
+        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-hdtb5VH63wQ/Vqffk-Ux8UI/AAAAAAAHPGo/S7IIzk5mFE0/s72-Ic42/usagi.png",
             "scale": 0.6,
@@ -31,7 +31,7 @@
                 1800
             ]
         },
-        "label": {
+        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
             "fillColor": {
                 "rgba": [
                     255,
@@ -82,7 +82,7 @@
         "availability": "2015-03-15T04:30:00+09:00/2017-04-28T23:59:59+09:00",
         "name": "ノウサギ",
         "description": "<p class=\"date\">2015.3.15 04:30</p>",
-        "billboard": {
+        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-hdtb5VH63wQ/Vqffk-Ux8UI/AAAAAAAHPGo/S7IIzk5mFE0/s72-Ic42/usagi.png",
             "scale": 0.6,
@@ -104,7 +104,7 @@
                 1800
             ]
         },
-        "label": {
+        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
             "fillColor": {
                 "rgba": [
                     255,
@@ -155,7 +155,7 @@
         "availability": "2015-04-01T10:05:00+09:00/2017-04-28T23:59:59+09:00",
         "name": "ノウサギ",
         "description": "<p class=\"date\">2015.4.1 10:05</p>",
-        "billboard": {
+        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-hdtb5VH63wQ/Vqffk-Ux8UI/AAAAAAAHPGo/S7IIzk5mFE0/s72-Ic42/usagi.png",
             "scale": 0.6,
@@ -177,7 +177,7 @@
                 1800
             ]
         },
-        "label": {
+        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
             "fillColor": {
                 "rgba": [
                     255,
@@ -228,7 +228,7 @@
         "availability": "2015-04-05T01:32:00+09:00/2017-04-28T23:59:59+09:00",
         "name": "ノウサギ",
         "description": "<p class=\"date\">2015.4.5 01:32</p>",
-        "billboard": {
+        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-hdtb5VH63wQ/Vqffk-Ux8UI/AAAAAAAHPGo/S7IIzk5mFE0/s72-Ic42/usagi.png",
             "scale": 0.6,
@@ -250,7 +250,7 @@
                 1800
             ]
         },
-        "label": {
+        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
             "fillColor": {
                 "rgba": [
                     255,
@@ -301,7 +301,7 @@
         "availability": "2015-04-05T03:35:00+09:00/2017-04-28T23:59:59+09:00",
         "name": "ノウサギ",
         "description": "<p class=\"date\">2015.4.5 03:35</p>",
-        "billboard": {
+        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-hdtb5VH63wQ/Vqffk-Ux8UI/AAAAAAAHPGo/S7IIzk5mFE0/s72-Ic42/usagi.png",
             "scale": 0.6,
@@ -323,7 +323,7 @@
                 1800
             ]
         },
-        "label": {
+        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
             "fillColor": {
                 "rgba": [
                     255,
@@ -374,7 +374,7 @@
         "availability": "2015-04-24T07:51:00+09:00/2017-04-28T23:59:59+09:00",
         "name": "ノウサギ",
         "description": "<p class=\"date\">2015.4.24 07:51</p>",
-        "billboard": {
+        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-hdtb5VH63wQ/Vqffk-Ux8UI/AAAAAAAHPGo/S7IIzk5mFE0/s72-Ic42/usagi.png",
             "scale": 0.6,
@@ -396,7 +396,7 @@
                 1800
             ]
         },
-        "label": {
+        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
             "fillColor": {
                 "rgba": [
                     255,
@@ -447,7 +447,7 @@
         "availability": "2015-07-07T08:52:00+09:00/2017-04-28T23:59:59+09:00",
         "name": "ノウサギ",
         "description": "<p class=\"date\">2015.7.7 08:52</p>",
-        "billboard": {
+        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-hdtb5VH63wQ/Vqffk-Ux8UI/AAAAAAAHPGo/S7IIzk5mFE0/s72-Ic42/usagi.png",
             "scale": 0.6,
@@ -469,7 +469,7 @@
                 1800
             ]
         },
-        "label": {
+        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
             "fillColor": {
                 "rgba": [
                     255,
@@ -520,7 +520,7 @@
         "availability": "2015-09-22T08:40:00+09:00/2017-04-28T23:59:59+09:00",
         "name": "ノウサギ",
         "description": "<p class=\"date\">2015.9.22 08:40</p>",
-        "billboard": {
+        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-hdtb5VH63wQ/Vqffk-Ux8UI/AAAAAAAHPGo/S7IIzk5mFE0/s72-Ic42/usagi.png",
             "scale": 0.6,
@@ -542,7 +542,7 @@
                 1800
             ]
         },
-        "label": {
+        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
             "fillColor": {
                 "rgba": [
                     255,
@@ -593,7 +593,7 @@
         "availability": "2015-12-15T23:50:00+09:00/2017-04-28T23:59:59+09:00",
         "name": "ノウサギ",
         "description": "<p class=\"date\">2015.12.15 23:50</p>",
-        "billboard": {
+        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-hdtb5VH63wQ/Vqffk-Ux8UI/AAAAAAAHPGo/S7IIzk5mFE0/s72-Ic42/usagi.png",
             "scale": 0.6,
@@ -615,7 +615,7 @@
                 1800
             ]
         },
-        "label": {
+        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
             "fillColor": {
                 "rgba": [
                     255,
@@ -666,7 +666,7 @@
         "availability": "2015-12-23T12:50:00+09:00/2017-04-28T23:59:59+09:00",
         "name": "ノウサギ",
         "description": "<p class=\"date\">2015.12.23 12:50</p>",
-        "billboard": {
+        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-hdtb5VH63wQ/Vqffk-Ux8UI/AAAAAAAHPGo/S7IIzk5mFE0/s72-Ic42/usagi.png",
             "scale": 0.6,
@@ -688,7 +688,7 @@
                 1800
             ]
         },
-        "label": {
+        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
             "fillColor": {
                 "rgba": [
                     255,
@@ -739,7 +739,7 @@
         "availability": "2016-02-17T15:00:00+09:00/2017-04-28T23:59:59+09:00",
         "name": "ノウサギ",
         "description": "<p class=\"date\">2016.2.17 15:00</p>",
-        "billboard": {
+        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-hdtb5VH63wQ/Vqffk-Ux8UI/AAAAAAAHPGo/S7IIzk5mFE0/s72-Ic42/usagi.png",
             "scale": 0.6,
@@ -761,7 +761,7 @@
                 1800
             ]
         },
-        "label": {
+        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
             "fillColor": {
                 "rgba": [
                     255,
@@ -812,7 +812,7 @@
         "availability": "2016-02-23T08:50:00+09:00/2017-04-28T23:59:59+09:00",
         "name": "ノウサギ",
         "description": "<p class=\"date\">2016.2.23 08:50</p>",
-        "billboard": {
+        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-hdtb5VH63wQ/Vqffk-Ux8UI/AAAAAAAHPGo/S7IIzk5mFE0/s72-Ic42/usagi.png",
             "scale": 0.6,
@@ -834,7 +834,7 @@
                 1800
             ]
         },
-        "label": {
+        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
             "fillColor": {
                 "rgba": [
                     255,
@@ -885,7 +885,7 @@
         "availability": "2016-03-04T22:35:00+09:00/2017-04-28T23:59:59+09:00",
         "name": "ノウサギ",
         "description": "<p class=\"date\">2016.3.4 22:35</p>",
-        "billboard": {
+        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-hdtb5VH63wQ/Vqffk-Ux8UI/AAAAAAAHPGo/S7IIzk5mFE0/s72-Ic42/usagi.png",
             "scale": 0.6,
@@ -907,7 +907,7 @@
                 1800
             ]
         },
-        "label": {
+        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
             "fillColor": {
                 "rgba": [
                     255,
@@ -958,7 +958,7 @@
         "availability": "2016-03-16T22:30:00+09:00/2017-04-28T23:59:59+09:00",
         "name": "ノウサギ",
         "description": "<p class=\"date\">2016.3.16 22:30</p>",
-        "billboard": {
+        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-hdtb5VH63wQ/Vqffk-Ux8UI/AAAAAAAHPGo/S7IIzk5mFE0/s72-Ic42/usagi.png",
             "scale": 0.6,
@@ -980,7 +980,7 @@
                 1800
             ]
         },
-        "label": {
+        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
             "fillColor": {
                 "rgba": [
                     255,
@@ -1031,7 +1031,7 @@
         "availability": "2016-04-01T08:33:00+09:00/2017-04-28T23:59:59+09:00",
         "name": "ノウサギ",
         "description": "<p class=\"date\">2016.4.1 08:33</p>",
-        "billboard": {
+        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-hdtb5VH63wQ/Vqffk-Ux8UI/AAAAAAAHPGo/S7IIzk5mFE0/s72-Ic42/usagi.png",
             "scale": 0.6,
@@ -1053,7 +1053,7 @@
                 1800
             ]
         },
-        "label": {
+        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
             "fillColor": {
                 "rgba": [
                     255,
@@ -1104,7 +1104,7 @@
         "availability": "2016-05-14T10:20:00+09:00/2017-04-28T23:59:59+09:00",
         "name": "ノウサギ",
         "description": "<p class=\"date\">2016.5.14 10:20</p>",
-        "billboard": {
+        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-hdtb5VH63wQ/Vqffk-Ux8UI/AAAAAAAHPGo/S7IIzk5mFE0/s72-Ic42/usagi.png",
             "scale": 0.6,
@@ -1126,7 +1126,7 @@
                 1800
             ]
         },
-        "label": {
+        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
             "fillColor": {
                 "rgba": [
                     255,
@@ -1177,7 +1177,7 @@
         "availability": "2016-06-02T08:00:00+09:00/2017-04-28T23:59:59+09:00",
         "name": "ノウサギ",
         "description": "<p class=\"date\">2016.6.2 08:00</p>",
-        "billboard": {
+        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-hdtb5VH63wQ/Vqffk-Ux8UI/AAAAAAAHPGo/S7IIzk5mFE0/s72-Ic42/usagi.png",
             "scale": 0.6,
@@ -1199,7 +1199,7 @@
                 1800
             ]
         },
-        "label": {
+        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
             "fillColor": {
                 "rgba": [
                     255,
@@ -1250,7 +1250,7 @@
         "availability": "2016-07-17T14:40:00+09:00/2017-04-28T23:59:59+09:00",
         "name": "ノウサギ",
         "description": "<p class=\"date\">2016.7.17 14:40</p>",
-        "billboard": {
+        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-hdtb5VH63wQ/Vqffk-Ux8UI/AAAAAAAHPGo/S7IIzk5mFE0/s72-Ic42/usagi.png",
             "scale": 0.6,
@@ -1272,7 +1272,7 @@
                 1800
             ]
         },
-        "label": {
+        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
             "fillColor": {
                 "rgba": [
                     255,
@@ -1323,7 +1323,7 @@
         "availability": "2016-10-24T02:40:00+09:00/2017-04-28T23:59:59+09:00",
         "name": "ノウサギ",
         "description": "<p class=\"date\">2016.10.24 02:40</p>",
-        "billboard": {
+        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-hdtb5VH63wQ/Vqffk-Ux8UI/AAAAAAAHPGo/S7IIzk5mFE0/s72-Ic42/usagi.png",
             "scale": 0.6,
@@ -1345,7 +1345,7 @@
                 1800
             ]
         },
-        "label": {
+        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
             "fillColor": {
                 "rgba": [
                     255,
@@ -1396,7 +1396,7 @@
         "availability": "2016-12-09T06:30:00+09:00/2017-04-28T23:59:59+09:00",
         "name": "ノウサギ",
         "description": "<p class=\"date\">2016.12.09 06:30</p>",
-        "billboard": {
+        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-hdtb5VH63wQ/Vqffk-Ux8UI/AAAAAAAHPGo/S7IIzk5mFE0/s72-Ic42/usagi.png",
             "scale": 0.6,
@@ -1418,7 +1418,7 @@
                 1800
             ]
         },
-        "label": {
+        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
             "fillColor": {
                 "rgba": [
                     255,
@@ -1469,7 +1469,7 @@
         "availability": "2016-12-12T07:50:00+09:00/2017-04-28T23:59:59+09:00",
         "name": "ノウサギ",
         "description": "<p class=\"date\">2016.12.12 07:50</p>",
-        "billboard": {
+        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-hdtb5VH63wQ/Vqffk-Ux8UI/AAAAAAAHPGo/S7IIzk5mFE0/s72-Ic42/usagi.png",
             "scale": 0.6,
@@ -1491,7 +1491,7 @@
                 1800
             ]
         },
-        "label": {
+        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
             "fillColor": {
                 "rgba": [
                     255,
@@ -1542,7 +1542,7 @@
         "availability": "2016-12-17T09:00:00+09:00/2017-04-28T23:59:59+09:00",
         "name": "ノウサギ",
         "description": "<p class=\"date\">2016.12.17 09:00</p>",
-        "billboard": {
+        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-hdtb5VH63wQ/Vqffk-Ux8UI/AAAAAAAHPGo/S7IIzk5mFE0/s72-Ic42/usagi.png",
             "scale": 0.6,
@@ -1564,7 +1564,7 @@
                 1800
             ]
         },
-        "label": {
+        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
             "fillColor": {
                 "rgba": [
                     255,
@@ -1615,7 +1615,7 @@
         "availability": "2016-12-28T22:30:00+09:00/2017-04-28T23:59:59+09:00",
         "name": "ノウサギ",
         "description": "<p class=\"date\">2016.12.28 22:30</p>",
-        "billboard": {
+        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-hdtb5VH63wQ/Vqffk-Ux8UI/AAAAAAAHPGo/S7IIzk5mFE0/s72-Ic42/usagi.png",
             "scale": 0.6,
@@ -1637,7 +1637,7 @@
                 1800
             ]
         },
-        "label": {
+        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
             "fillColor": {
                 "rgba": [
                     255,
@@ -1688,7 +1688,7 @@
         "availability": "2017-02-01T07:52:00+09:00/2017-04-28T23:59:59+09:00",
         "name": "ノウサギ",
         "description": "<p class=\"date\">2017.2.1 07:52</p>",
-        "billboard": {
+        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-hdtb5VH63wQ/Vqffk-Ux8UI/AAAAAAAHPGo/S7IIzk5mFE0/s72-Ic42/usagi.png",
             "scale": 0.6,
@@ -1710,7 +1710,7 @@
                 1800
             ]
         },
-        "label": {
+        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
             "fillColor": {
                 "rgba": [
                     255,
@@ -1761,7 +1761,7 @@
         "availability": "2017-02-08T07:13:00+09:00/2017-04-28T23:59:59+09:00",
         "name": "ノウサギ",
         "description": "<p class=\"date\">2017.2.8 07:13</p>",
-        "billboard": {
+        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-hdtb5VH63wQ/Vqffk-Ux8UI/AAAAAAAHPGo/S7IIzk5mFE0/s72-Ic42/usagi.png",
             "scale": 0.6,
@@ -1783,7 +1783,7 @@
                 1800
             ]
         },
-        "label": {
+        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
             "fillColor": {
                 "rgba": [
                     255,
@@ -1834,7 +1834,7 @@
         "availability": "2017-03-30T09:10:00+09:00/2017-04-28T23:59:59+09:00",
         "name": "ノウサギ",
         "description": "<p class=\"date\">2017.3.30 09:10</p>",
-        "billboard": {
+        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-hdtb5VH63wQ/Vqffk-Ux8UI/AAAAAAAHPGo/S7IIzk5mFE0/s72-Ic42/usagi.png",
             "scale": 0.6,
@@ -1856,7 +1856,7 @@
                 1800
             ]
         },
-        "label": {
+        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
             "fillColor": {
                 "rgba": [
                     255,
@@ -1907,7 +1907,7 @@
         "availability": "2017-04-21T10:10:00+09:00/2017-04-28T23:59:59+09:00",
         "name": "ノウサギ",
         "description": "<p class=\"date\">2017.4.21 10:10</p>",
-        "billboard": {
+        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-hdtb5VH63wQ/Vqffk-Ux8UI/AAAAAAAHPGo/S7IIzk5mFE0/s72-Ic42/usagi.png",
             "scale": 0.6,
@@ -1929,7 +1929,7 @@
                 1800
             ]
         },
-        "label": {
+        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
             "fillColor": {
                 "rgba": [
                     255,
@@ -1980,7 +1980,7 @@
         "availability": "2017-04-25T08:46:00+09:00/2017-04-28T23:59:59+09:00",
         "name": "ノウサギ",
         "description": "<p class=\"date\">2017.4.25 08:46</p>",
-        "billboard": {
+        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-hdtb5VH63wQ/Vqffk-Ux8UI/AAAAAAAHPGo/S7IIzk5mFE0/s72-Ic42/usagi.png",
             "scale": 0.6,
@@ -2002,7 +2002,7 @@
                 1800
             ]
         },
-        "label": {
+        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
             "fillColor": {
                 "rgba": [
                     255,
@@ -2053,7 +2053,7 @@
         "availability": "2017-04-28T09:01:00+09:00/2017-04-28T23:59:59+09:00",
         "name": "ノウサギ",
         "description": "<p class=\"date\">2017.4.28 09:01</p>",
-        "billboard": {
+        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-hdtb5VH63wQ/Vqffk-Ux8UI/AAAAAAAHPGo/S7IIzk5mFE0/s72-Ic42/usagi.png",
             "scale": 0.6,
@@ -2075,7 +2075,7 @@
                 1800
             ]
         },
-        "label": {
+        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
             "fillColor": {
                 "rgba": [
                     255,
