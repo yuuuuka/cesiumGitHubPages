@@ -62,11 +62,13 @@
 			<span class="icon-font">paramater</span>
 		</div>
 	</div>
+	<!--
 	<div id="buttonGeo" class="general-button" onclick="flyToMyLocation();">
 		<div class="button-content">
 			<span class="icon-font">geo</span>
 		</div>
 	</div>
+	-->
 	<div id="slideMenuCheckBox"></div>
 	<div id="slideMenuLayer"></div>
 	<div id="streetView_wrapper">
@@ -188,20 +190,6 @@
 		viewPointsArray[0] = new viewPoints("富士山上空", 35.360556, 138.727778, 0, -89, 36000);
 		viewPointsArray[1] = new viewPoints("初期視点", 35.360556, 138.727778, 0, -20, 28000);
 		viewPointsArray[2] = new viewPoints("日本全国", 37.95041488123474, 137.44348377604837, 0, -85, 3421711);
-
-		//視点メニュー作成
-
-		/*
-		var viewPointChangeMenu = document.getElementById('slideMenuCheckBox');
-		var dropDownList = "";
-
-		for (var i = 0; i < viewPointsArray.length; i++) {
-			dropDownList = dropDownList + '<li><a href="#" onclick = "changeViewPoint(' + i + ',' + '3.0);return false;">' + viewPointsArray[i].label + '</a></li>';
-		}
-
-		var viewPointChangeMenuHtml = '<ul class="viewpoint">' + dropDownList + '</ul>';
-		viewPointChangeMenu.innerHTML = viewPointChangeMenuHtml;
-		*/
 
 		//czml配列作成
 
@@ -370,7 +358,7 @@
 
 			var overlayList = "";
 			for (var i = 0; i < overlayDataArray.length; i++) {
-				overlayList = overlayList + '<p class="slide_label">' + overlayDataArray[i].label + '</p><input id="' + overlayDataArray[i].id + '" type="range" min="0" max="33" value="' + overlayDataArray[i].value * 0.33 + '" step="1" oninput="transParent(' + i + ');"/>';
+				overlayList = overlayList + '<p class="slideLabel">' + overlayDataArray[i].label + '</p><input id="' + overlayDataArray[i].id + '" type="range" min="0" max="33" value="' + overlayDataArray[i].value * 0.33 + '" step="1" oninput="transParent(' + i + ');"/>';
 			}
 			var overlayListMenu = document.getElementById('slideMenuLayer');
 			overlayListMenu.innerHTML = overlayList;
