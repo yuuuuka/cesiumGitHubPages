@@ -9,7 +9,15 @@
         "availability": "2014-07-21T09:00:00+09:00/2017-05-05T23:59:59+09:00",
         "name": "ネコ",
         "description": "<p class=\"date\">2014.7.21 09:00</p>",
-        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
+        "billboard": {
+            "scaleByDistance": {
+                "nearFarScalar": [
+                    15000,
+                    1,
+                    200000,
+                    0
+                ]
+            },
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-oXBsJKHfFXc/VqffkPIDWiI/AAAAAAAHPGo/rMexMDDoAew/s72-Ic42/neko.png",
             "scale": 0.6,
@@ -31,7 +39,15 @@
                 1800
             ]
         },
-        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
+        "label": {
+            "translucencyByDistance": {
+                "nearFarScalar": [
+                    10000,
+                    1,
+                    80000,
+                    0
+                ]
+            },
             "fillColor": {
                 "rgba": [
                     255,
@@ -82,7 +98,15 @@
         "availability": "2014-08-02T12:50:00+09:00/2017-05-05T23:59:59+09:00",
         "name": "ネコ",
         "description": "<p class=\"date\">2014.8.2 12:50</p>",
-        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
+        "billboard": {
+            "scaleByDistance": {
+                "nearFarScalar": [
+                    15000,
+                    1,
+                    200000,
+                    0
+                ]
+            },
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-oXBsJKHfFXc/VqffkPIDWiI/AAAAAAAHPGo/rMexMDDoAew/s72-Ic42/neko.png",
             "scale": 0.6,
@@ -104,7 +128,15 @@
                 1800
             ]
         },
-        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
+        "label": {
+            "translucencyByDistance": {
+                "nearFarScalar": [
+                    10000,
+                    1,
+                    80000,
+                    0
+                ]
+            },
             "fillColor": {
                 "rgba": [
                     255,
@@ -155,7 +187,15 @@
         "availability": "2014-11-09T08:30:00+09:00/2017-05-05T23:59:59+09:00",
         "name": "ネコ",
         "description": "<p class=\"date\">2014.11.9 08:30</p>",
-        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
+        "billboard": {
+            "scaleByDistance": {
+                "nearFarScalar": [
+                    15000,
+                    1,
+                    200000,
+                    0
+                ]
+            },
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-oXBsJKHfFXc/VqffkPIDWiI/AAAAAAAHPGo/rMexMDDoAew/s72-Ic42/neko.png",
             "scale": 0.6,
@@ -177,7 +217,15 @@
                 1800
             ]
         },
-        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
+        "label": {
+            "translucencyByDistance": {
+                "nearFarScalar": [
+                    10000,
+                    1,
+                    80000,
+                    0
+                ]
+            },
             "fillColor": {
                 "rgba": [
                     255,
@@ -228,7 +276,15 @@
         "availability": "2014-11-22T19:20:00+09:00/2017-05-05T23:59:59+09:00",
         "name": "ネコ",
         "description": "<p class=\"date\">2014.11.22 19:20</p>",
-        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
+        "billboard": {
+            "scaleByDistance": {
+                "nearFarScalar": [
+                    15000,
+                    1,
+                    200000,
+                    0
+                ]
+            },
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-oXBsJKHfFXc/VqffkPIDWiI/AAAAAAAHPGo/rMexMDDoAew/s72-Ic42/neko.png",
             "scale": 0.6,
@@ -250,7 +306,15 @@
                 1800
             ]
         },
-        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
+        "label": {
+            "translucencyByDistance": {
+                "nearFarScalar": [
+                    10000,
+                    1,
+                    80000,
+                    0
+                ]
+            },
             "fillColor": {
                 "rgba": [
                     255,
@@ -301,7 +365,15 @@
         "availability": "2014-12-22T21:00:00+09:00/2017-05-05T23:59:59+09:00",
         "name": "ネコ",
         "description": "<p class=\"date\">2014.12.22 21:00</p>",
-        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
+        "billboard": {
+            "scaleByDistance": {
+                "nearFarScalar": [
+                    15000,
+                    1,
+                    200000,
+                    0
+                ]
+            },
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-oXBsJKHfFXc/VqffkPIDWiI/AAAAAAAHPGo/rMexMDDoAew/s72-Ic42/neko.png",
             "scale": 0.6,
@@ -323,7 +395,15 @@
                 1800
             ]
         },
-        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
+        "label": {
+            "translucencyByDistance": {
+                "nearFarScalar": [
+                    10000,
+                    1,
+                    80000,
+                    0
+                ]
+            },
             "fillColor": {
                 "rgba": [
                     255,
@@ -374,7 +454,15 @@
         "availability": "2015-02-28T14:00:00+09:00/2017-05-05T23:59:59+09:00",
         "name": "ネコ",
         "description": "<p class=\"date\">2015.2.28 14:00</p>",
-        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
+        "billboard": {
+            "scaleByDistance": {
+                "nearFarScalar": [
+                    15000,
+                    1,
+                    200000,
+                    0
+                ]
+            },
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-oXBsJKHfFXc/VqffkPIDWiI/AAAAAAAHPGo/rMexMDDoAew/s72-Ic42/neko.png",
             "scale": 0.6,
@@ -396,7 +484,15 @@
                 1800
             ]
         },
-        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
+        "label": {
+            "translucencyByDistance": {
+                "nearFarScalar": [
+                    10000,
+                    1,
+                    80000,
+                    0
+                ]
+            },
             "fillColor": {
                 "rgba": [
                     255,
@@ -447,7 +543,15 @@
         "availability": "2015-05-19T12:20:00+09:00/2017-05-05T23:59:59+09:00",
         "name": "ネコ",
         "description": "<p class=\"date\">2015.5.19 12:20</p>",
-        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
+        "billboard": {
+            "scaleByDistance": {
+                "nearFarScalar": [
+                    15000,
+                    1,
+                    200000,
+                    0
+                ]
+            },
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-oXBsJKHfFXc/VqffkPIDWiI/AAAAAAAHPGo/rMexMDDoAew/s72-Ic42/neko.png",
             "scale": 0.6,
@@ -469,7 +573,15 @@
                 1800
             ]
         },
-        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
+        "label": {
+            "translucencyByDistance": {
+                "nearFarScalar": [
+                    10000,
+                    1,
+                    80000,
+                    0
+                ]
+            },
             "fillColor": {
                 "rgba": [
                     255,
@@ -520,7 +632,15 @@
         "availability": "2015-10-06T23:20:00+09:00/2017-05-05T23:59:59+09:00",
         "name": "ネコ",
         "description": "<p class=\"date\">2015.10.6 23:20</p>",
-        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
+        "billboard": {
+            "scaleByDistance": {
+                "nearFarScalar": [
+                    15000,
+                    1,
+                    200000,
+                    0
+                ]
+            },
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-oXBsJKHfFXc/VqffkPIDWiI/AAAAAAAHPGo/rMexMDDoAew/s72-Ic42/neko.png",
             "scale": 0.6,
@@ -542,7 +662,15 @@
                 1800
             ]
         },
-        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
+        "label": {
+            "translucencyByDistance": {
+                "nearFarScalar": [
+                    10000,
+                    1,
+                    80000,
+                    0
+                ]
+            },
             "fillColor": {
                 "rgba": [
                     255,
@@ -593,7 +721,15 @@
         "availability": "2015-12-03T17:55:00+09:00/2017-05-05T23:59:59+09:00",
         "name": "ネコ",
         "description": "<p class=\"date\">2015.12.3 17:55</p>",
-        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
+        "billboard": {
+            "scaleByDistance": {
+                "nearFarScalar": [
+                    15000,
+                    1,
+                    200000,
+                    0
+                ]
+            },
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-oXBsJKHfFXc/VqffkPIDWiI/AAAAAAAHPGo/rMexMDDoAew/s72-Ic42/neko.png",
             "scale": 0.6,
@@ -615,7 +751,15 @@
                 1800
             ]
         },
-        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
+        "label": {
+            "translucencyByDistance": {
+                "nearFarScalar": [
+                    10000,
+                    1,
+                    80000,
+                    0
+                ]
+            },
             "fillColor": {
                 "rgba": [
                     255,
@@ -666,7 +810,15 @@
         "availability": "2015-12-16T00:40:00+09:00/2017-05-05T23:59:59+09:00",
         "name": "ネコ",
         "description": "<p class=\"date\">2015.12.16 00:40（親ネコ？）</p>",
-        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
+        "billboard": {
+            "scaleByDistance": {
+                "nearFarScalar": [
+                    15000,
+                    1,
+                    200000,
+                    0
+                ]
+            },
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-oXBsJKHfFXc/VqffkPIDWiI/AAAAAAAHPGo/rMexMDDoAew/s72-Ic42/neko.png",
             "scale": 0.6,
@@ -688,7 +840,15 @@
                 1800
             ]
         },
-        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
+        "label": {
+            "translucencyByDistance": {
+                "nearFarScalar": [
+                    10000,
+                    1,
+                    80000,
+                    0
+                ]
+            },
             "fillColor": {
                 "rgba": [
                     255,
@@ -739,7 +899,15 @@
         "availability": "2015-12-16T00:40:00+09:00/2017-05-05T23:59:59+09:00",
         "name": "ネコ",
         "description": "<p class=\"date\">2015.12.16 00:40（子ネコ？）</p>",
-        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
+        "billboard": {
+            "scaleByDistance": {
+                "nearFarScalar": [
+                    15000,
+                    1,
+                    200000,
+                    0
+                ]
+            },
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-oXBsJKHfFXc/VqffkPIDWiI/AAAAAAAHPGo/rMexMDDoAew/s72-Ic42/neko.png",
             "scale": 0.6,
@@ -761,7 +929,15 @@
                 1800
             ]
         },
-        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
+        "label": {
+            "translucencyByDistance": {
+                "nearFarScalar": [
+                    10000,
+                    1,
+                    80000,
+                    0
+                ]
+            },
             "fillColor": {
                 "rgba": [
                     255,
@@ -812,7 +988,15 @@
         "availability": "2015-12-31T23:30:00+09:00/2017-05-05T23:59:59+09:00",
         "name": "ネコ",
         "description": "<p class=\"date\">2015.12.31 23:30</p>",
-        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
+        "billboard": {
+            "scaleByDistance": {
+                "nearFarScalar": [
+                    15000,
+                    1,
+                    200000,
+                    0
+                ]
+            },
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-oXBsJKHfFXc/VqffkPIDWiI/AAAAAAAHPGo/rMexMDDoAew/s72-Ic42/neko.png",
             "scale": 0.6,
@@ -834,7 +1018,15 @@
                 1800
             ]
         },
-        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
+        "label": {
+            "translucencyByDistance": {
+                "nearFarScalar": [
+                    10000,
+                    1,
+                    80000,
+                    0
+                ]
+            },
             "fillColor": {
                 "rgba": [
                     255,
@@ -885,7 +1077,15 @@
         "availability": "2016-03-29T07:40:00+09:00/2017-05-05T23:59:59+09:00",
         "name": "ネコ",
         "description": "<p class=\"date\">2016.3.29 07:40</p>",
-        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
+        "billboard": {
+            "scaleByDistance": {
+                "nearFarScalar": [
+                    15000,
+                    1,
+                    200000,
+                    0
+                ]
+            },
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-oXBsJKHfFXc/VqffkPIDWiI/AAAAAAAHPGo/rMexMDDoAew/s72-Ic42/neko.png",
             "scale": 0.6,
@@ -907,7 +1107,15 @@
                 1800
             ]
         },
-        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
+        "label": {
+            "translucencyByDistance": {
+                "nearFarScalar": [
+                    10000,
+                    1,
+                    80000,
+                    0
+                ]
+            },
             "fillColor": {
                 "rgba": [
                     255,
@@ -958,7 +1166,15 @@
         "availability": "2016-04-19T08:00:00+09:00/2017-05-05T23:59:59+09:00",
         "name": "ネコ",
         "description": "<p class=\"date\">2016.4.19 08:00</p>",
-        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
+        "billboard": {
+            "scaleByDistance": {
+                "nearFarScalar": [
+                    15000,
+                    1,
+                    200000,
+                    0
+                ]
+            },
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-oXBsJKHfFXc/VqffkPIDWiI/AAAAAAAHPGo/rMexMDDoAew/s72-Ic42/neko.png",
             "scale": 0.6,
@@ -980,7 +1196,15 @@
                 1800
             ]
         },
-        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
+        "label": {
+            "translucencyByDistance": {
+                "nearFarScalar": [
+                    10000,
+                    1,
+                    80000,
+                    0
+                ]
+            },
             "fillColor": {
                 "rgba": [
                     255,
@@ -1031,7 +1255,15 @@
         "availability": "2016-05-23T22:00:00+09:00/2017-05-05T23:59:59+09:00",
         "name": "ネコ",
         "description": "<p class=\"date\">2016.5.23 22:00</p>",
-        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
+        "billboard": {
+            "scaleByDistance": {
+                "nearFarScalar": [
+                    15000,
+                    1,
+                    200000,
+                    0
+                ]
+            },
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-oXBsJKHfFXc/VqffkPIDWiI/AAAAAAAHPGo/rMexMDDoAew/s72-Ic42/neko.png",
             "scale": 0.6,
@@ -1053,7 +1285,15 @@
                 1800
             ]
         },
-        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
+        "label": {
+            "translucencyByDistance": {
+                "nearFarScalar": [
+                    10000,
+                    1,
+                    80000,
+                    0
+                ]
+            },
             "fillColor": {
                 "rgba": [
                     255,
@@ -1104,7 +1344,15 @@
         "availability": "2016-05-28T12:56:00+09:00/2017-05-05T23:59:59+09:00",
         "name": "ネコ",
         "description": "<p class=\"date\">2016.5.28 12:56</p>",
-        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
+        "billboard": {
+            "scaleByDistance": {
+                "nearFarScalar": [
+                    15000,
+                    1,
+                    200000,
+                    0
+                ]
+            },
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-oXBsJKHfFXc/VqffkPIDWiI/AAAAAAAHPGo/rMexMDDoAew/s72-Ic42/neko.png",
             "scale": 0.6,
@@ -1126,7 +1374,15 @@
                 1800
             ]
         },
-        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
+        "label": {
+            "translucencyByDistance": {
+                "nearFarScalar": [
+                    10000,
+                    1,
+                    80000,
+                    0
+                ]
+            },
             "fillColor": {
                 "rgba": [
                     255,
@@ -1177,7 +1433,15 @@
         "availability": "2016-06-03T07:55:00+09:00/2017-05-05T23:59:59+09:00",
         "name": "ネコ",
         "description": "<p class=\"date\">2016.6.3 07:55</p>",
-        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
+        "billboard": {
+            "scaleByDistance": {
+                "nearFarScalar": [
+                    15000,
+                    1,
+                    200000,
+                    0
+                ]
+            },
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-oXBsJKHfFXc/VqffkPIDWiI/AAAAAAAHPGo/rMexMDDoAew/s72-Ic42/neko.png",
             "scale": 0.6,
@@ -1199,7 +1463,15 @@
                 1800
             ]
         },
-        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
+        "label": {
+            "translucencyByDistance": {
+                "nearFarScalar": [
+                    10000,
+                    1,
+                    80000,
+                    0
+                ]
+            },
             "fillColor": {
                 "rgba": [
                     255,
@@ -1250,7 +1522,15 @@
         "availability": "2016-06-24T08:45:00+09:00/2017-05-05T23:59:59+09:00",
         "name": "ネコ",
         "description": "<p class=\"date\">2016.6.24 08:45</p>",
-        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
+        "billboard": {
+            "scaleByDistance": {
+                "nearFarScalar": [
+                    15000,
+                    1,
+                    200000,
+                    0
+                ]
+            },
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-oXBsJKHfFXc/VqffkPIDWiI/AAAAAAAHPGo/rMexMDDoAew/s72-Ic42/neko.png",
             "scale": 0.6,
@@ -1272,7 +1552,15 @@
                 1800
             ]
         },
-        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
+        "label": {
+            "translucencyByDistance": {
+                "nearFarScalar": [
+                    10000,
+                    1,
+                    80000,
+                    0
+                ]
+            },
             "fillColor": {
                 "rgba": [
                     255,
@@ -1323,7 +1611,15 @@
         "availability": "2016-06-27T09:50:00+09:00/2017-05-05T23:59:59+09:00",
         "name": "ネコ",
         "description": "<p class=\"date\">2016.6.27 09:50</p>",
-        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
+        "billboard": {
+            "scaleByDistance": {
+                "nearFarScalar": [
+                    15000,
+                    1,
+                    200000,
+                    0
+                ]
+            },
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-oXBsJKHfFXc/VqffkPIDWiI/AAAAAAAHPGo/rMexMDDoAew/s72-Ic42/neko.png",
             "scale": 0.6,
@@ -1345,7 +1641,15 @@
                 1800
             ]
         },
-        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
+        "label": {
+            "translucencyByDistance": {
+                "nearFarScalar": [
+                    10000,
+                    1,
+                    80000,
+                    0
+                ]
+            },
             "fillColor": {
                 "rgba": [
                     255,
@@ -1396,7 +1700,15 @@
         "availability": "2016-07-13T13:30:00+09:00/2017-05-05T23:59:59+09:00",
         "name": "ネコ",
         "description": "<p class=\"date\">2016.7.13 13:30</p>",
-        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
+        "billboard": {
+            "scaleByDistance": {
+                "nearFarScalar": [
+                    15000,
+                    1,
+                    200000,
+                    0
+                ]
+            },
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-oXBsJKHfFXc/VqffkPIDWiI/AAAAAAAHPGo/rMexMDDoAew/s72-Ic42/neko.png",
             "scale": 0.6,
@@ -1418,7 +1730,15 @@
                 1800
             ]
         },
-        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
+        "label": {
+            "translucencyByDistance": {
+                "nearFarScalar": [
+                    10000,
+                    1,
+                    80000,
+                    0
+                ]
+            },
             "fillColor": {
                 "rgba": [
                     255,
@@ -1469,7 +1789,15 @@
         "availability": "2016-07-20T08:27:00+09:00/2017-05-05T23:59:59+09:00",
         "name": "ネコ",
         "description": "<p class=\"date\">2016.7.20 08:27</p>",
-        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
+        "billboard": {
+            "scaleByDistance": {
+                "nearFarScalar": [
+                    15000,
+                    1,
+                    200000,
+                    0
+                ]
+            },
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-oXBsJKHfFXc/VqffkPIDWiI/AAAAAAAHPGo/rMexMDDoAew/s72-Ic42/neko.png",
             "scale": 0.6,
@@ -1491,7 +1819,15 @@
                 1800
             ]
         },
-        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
+        "label": {
+            "translucencyByDistance": {
+                "nearFarScalar": [
+                    10000,
+                    1,
+                    80000,
+                    0
+                ]
+            },
             "fillColor": {
                 "rgba": [
                     255,
@@ -1542,7 +1878,15 @@
         "availability": "2016-07-20T15:00:00+09:00/2017-05-05T23:59:59+09:00",
         "name": "ネコ",
         "description": "<p class=\"date\">2016.7.20 15:00</p>",
-        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
+        "billboard": {
+            "scaleByDistance": {
+                "nearFarScalar": [
+                    15000,
+                    1,
+                    200000,
+                    0
+                ]
+            },
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-oXBsJKHfFXc/VqffkPIDWiI/AAAAAAAHPGo/rMexMDDoAew/s72-Ic42/neko.png",
             "scale": 0.6,
@@ -1564,7 +1908,15 @@
                 1800
             ]
         },
-        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
+        "label": {
+            "translucencyByDistance": {
+                "nearFarScalar": [
+                    10000,
+                    1,
+                    80000,
+                    0
+                ]
+            },
             "fillColor": {
                 "rgba": [
                     255,
@@ -1615,7 +1967,15 @@
         "availability": "2016-08-23T07:50:00+09:00/2017-05-05T23:59:59+09:00",
         "name": "ネコ",
         "description": "<p class=\"date\">2016.8.23 07:50</p>",
-        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
+        "billboard": {
+            "scaleByDistance": {
+                "nearFarScalar": [
+                    15000,
+                    1,
+                    200000,
+                    0
+                ]
+            },
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-oXBsJKHfFXc/VqffkPIDWiI/AAAAAAAHPGo/rMexMDDoAew/s72-Ic42/neko.png",
             "scale": 0.6,
@@ -1637,7 +1997,15 @@
                 1800
             ]
         },
-        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
+        "label": {
+            "translucencyByDistance": {
+                "nearFarScalar": [
+                    10000,
+                    1,
+                    80000,
+                    0
+                ]
+            },
             "fillColor": {
                 "rgba": [
                     255,
@@ -1688,7 +2056,15 @@
         "availability": "2016-09-11T09:28:00+09:00/2017-05-05T23:59:59+09:00",
         "name": "イヌ",
         "description": "<p class=\"date\">2016.9.11 09:28</p>",
-        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
+        "billboard": {
+            "scaleByDistance": {
+                "nearFarScalar": [
+                    15000,
+                    1,
+                    200000,
+                    0
+                ]
+            },
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-oXBsJKHfFXc/VqffkPIDWiI/AAAAAAAHPGo/rMexMDDoAew/s72-Ic42/neko.png",
             "scale": 0.6,
@@ -1710,7 +2086,15 @@
                 1800
             ]
         },
-        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
+        "label": {
+            "translucencyByDistance": {
+                "nearFarScalar": [
+                    10000,
+                    1,
+                    80000,
+                    0
+                ]
+            },
             "fillColor": {
                 "rgba": [
                     255,
@@ -1761,7 +2145,15 @@
         "availability": "2016-10-14T19:09:00+09:00/2017-05-05T23:59:59+09:00",
         "name": "ネコ",
         "description": "<p class=\"date\">2016.10.14 19:09</p>",
-        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
+        "billboard": {
+            "scaleByDistance": {
+                "nearFarScalar": [
+                    15000,
+                    1,
+                    200000,
+                    0
+                ]
+            },
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-oXBsJKHfFXc/VqffkPIDWiI/AAAAAAAHPGo/rMexMDDoAew/s72-Ic42/neko.png",
             "scale": 0.6,
@@ -1783,7 +2175,15 @@
                 1800
             ]
         },
-        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
+        "label": {
+            "translucencyByDistance": {
+                "nearFarScalar": [
+                    10000,
+                    1,
+                    80000,
+                    0
+                ]
+            },
             "fillColor": {
                 "rgba": [
                     255,
@@ -1834,7 +2234,15 @@
         "availability": "2016-10-14T19:10:00+09:00/2017-05-05T23:59:59+09:00",
         "name": "ネコ",
         "description": "<p class=\"date\">2016.10.14 19:10</p>",
-        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
+        "billboard": {
+            "scaleByDistance": {
+                "nearFarScalar": [
+                    15000,
+                    1,
+                    200000,
+                    0
+                ]
+            },
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-oXBsJKHfFXc/VqffkPIDWiI/AAAAAAAHPGo/rMexMDDoAew/s72-Ic42/neko.png",
             "scale": 0.6,
@@ -1856,7 +2264,15 @@
                 1800
             ]
         },
-        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
+        "label": {
+            "translucencyByDistance": {
+                "nearFarScalar": [
+                    10000,
+                    1,
+                    80000,
+                    0
+                ]
+            },
             "fillColor": {
                 "rgba": [
                     255,
@@ -1907,7 +2323,15 @@
         "availability": "2016-10-25T07:50:00+09:00/2017-05-05T23:59:59+09:00",
         "name": "ネコ",
         "description": "<p class=\"date\">2016.10.25 07:50</p>",
-        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
+        "billboard": {
+            "scaleByDistance": {
+                "nearFarScalar": [
+                    15000,
+                    1,
+                    200000,
+                    0
+                ]
+            },
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-oXBsJKHfFXc/VqffkPIDWiI/AAAAAAAHPGo/rMexMDDoAew/s72-Ic42/neko.png",
             "scale": 0.6,
@@ -1929,7 +2353,15 @@
                 1800
             ]
         },
-        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
+        "label": {
+            "translucencyByDistance": {
+                "nearFarScalar": [
+                    10000,
+                    1,
+                    80000,
+                    0
+                ]
+            },
             "fillColor": {
                 "rgba": [
                     255,
@@ -1980,7 +2412,15 @@
         "availability": "2016-11-01T12:05:00+09:00/2017-05-05T23:59:59+09:00",
         "name": "ネコ",
         "description": "<p class=\"date\">2016.11.1 12:05</p>",
-        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
+        "billboard": {
+            "scaleByDistance": {
+                "nearFarScalar": [
+                    15000,
+                    1,
+                    200000,
+                    0
+                ]
+            },
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-oXBsJKHfFXc/VqffkPIDWiI/AAAAAAAHPGo/rMexMDDoAew/s72-Ic42/neko.png",
             "scale": 0.6,
@@ -2002,7 +2442,15 @@
                 1800
             ]
         },
-        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
+        "label": {
+            "translucencyByDistance": {
+                "nearFarScalar": [
+                    10000,
+                    1,
+                    80000,
+                    0
+                ]
+            },
             "fillColor": {
                 "rgba": [
                     255,
@@ -2053,7 +2501,15 @@
         "availability": "2016-11-11T14:46:00+09:00/2017-05-05T23:59:59+09:00",
         "name": "ネコ",
         "description": "<p class=\"date\">2016.11.11 14:46</p>",
-        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
+        "billboard": {
+            "scaleByDistance": {
+                "nearFarScalar": [
+                    15000,
+                    1,
+                    200000,
+                    0
+                ]
+            },
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-oXBsJKHfFXc/VqffkPIDWiI/AAAAAAAHPGo/rMexMDDoAew/s72-Ic42/neko.png",
             "scale": 0.6,
@@ -2075,7 +2531,15 @@
                 1800
             ]
         },
-        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
+        "label": {
+            "translucencyByDistance": {
+                "nearFarScalar": [
+                    10000,
+                    1,
+                    80000,
+                    0
+                ]
+            },
             "fillColor": {
                 "rgba": [
                     255,
@@ -2126,7 +2590,15 @@
         "availability": "2016-11-18T08:30:00+09:00/2017-05-05T23:59:59+09:00",
         "name": "イヌ",
         "description": "<p class=\"date\">2016.11.18 08:30</p>",
-        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
+        "billboard": {
+            "scaleByDistance": {
+                "nearFarScalar": [
+                    15000,
+                    1,
+                    200000,
+                    0
+                ]
+            },
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-oXBsJKHfFXc/VqffkPIDWiI/AAAAAAAHPGo/rMexMDDoAew/s72-Ic42/neko.png",
             "scale": 0.6,
@@ -2148,7 +2620,15 @@
                 1800
             ]
         },
-        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
+        "label": {
+            "translucencyByDistance": {
+                "nearFarScalar": [
+                    10000,
+                    1,
+                    80000,
+                    0
+                ]
+            },
             "fillColor": {
                 "rgba": [
                     255,
@@ -2199,7 +2679,15 @@
         "availability": "2016-12-04T07:30:00+09:00/2017-05-05T23:59:59+09:00",
         "name": "ネコ",
         "description": "<p class=\"date\">2016.12.4 07:30</p>",
-        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
+        "billboard": {
+            "scaleByDistance": {
+                "nearFarScalar": [
+                    15000,
+                    1,
+                    200000,
+                    0
+                ]
+            },
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-oXBsJKHfFXc/VqffkPIDWiI/AAAAAAAHPGo/rMexMDDoAew/s72-Ic42/neko.png",
             "scale": 0.6,
@@ -2221,7 +2709,15 @@
                 1800
             ]
         },
-        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
+        "label": {
+            "translucencyByDistance": {
+                "nearFarScalar": [
+                    10000,
+                    1,
+                    80000,
+                    0
+                ]
+            },
             "fillColor": {
                 "rgba": [
                     255,
@@ -2272,7 +2768,15 @@
         "availability": "2016-12-09T23:49:00+09:00/2017-05-05T23:59:59+09:00",
         "name": "ネコ",
         "description": "<p class=\"date\">2016.12.09 23:49</p>",
-        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
+        "billboard": {
+            "scaleByDistance": {
+                "nearFarScalar": [
+                    15000,
+                    1,
+                    200000,
+                    0
+                ]
+            },
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-oXBsJKHfFXc/VqffkPIDWiI/AAAAAAAHPGo/rMexMDDoAew/s72-Ic42/neko.png",
             "scale": 0.6,
@@ -2294,7 +2798,15 @@
                 1800
             ]
         },
-        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
+        "label": {
+            "translucencyByDistance": {
+                "nearFarScalar": [
+                    10000,
+                    1,
+                    80000,
+                    0
+                ]
+            },
             "fillColor": {
                 "rgba": [
                     255,
@@ -2345,7 +2857,15 @@
         "availability": "2016-12-15T09:58:00+09:00/2017-05-05T23:59:59+09:00",
         "name": "ネコ",
         "description": "<p class=\"date\">2016.12.15 09:58</p>",
-        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
+        "billboard": {
+            "scaleByDistance": {
+                "nearFarScalar": [
+                    15000,
+                    1,
+                    200000,
+                    0
+                ]
+            },
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-oXBsJKHfFXc/VqffkPIDWiI/AAAAAAAHPGo/rMexMDDoAew/s72-Ic42/neko.png",
             "scale": 0.6,
@@ -2367,7 +2887,15 @@
                 1800
             ]
         },
-        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
+        "label": {
+            "translucencyByDistance": {
+                "nearFarScalar": [
+                    10000,
+                    1,
+                    80000,
+                    0
+                ]
+            },
             "fillColor": {
                 "rgba": [
                     255,
@@ -2418,7 +2946,15 @@
         "availability": "2017-01-24T07:50:00+09:00/2017-05-05T23:59:59+09:00",
         "name": "ネコ",
         "description": "<p class=\"date\">2017.1.24 07:50</p>",
-        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
+        "billboard": {
+            "scaleByDistance": {
+                "nearFarScalar": [
+                    15000,
+                    1,
+                    200000,
+                    0
+                ]
+            },
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-oXBsJKHfFXc/VqffkPIDWiI/AAAAAAAHPGo/rMexMDDoAew/s72-Ic42/neko.png",
             "scale": 0.6,
@@ -2440,7 +2976,15 @@
                 1800
             ]
         },
-        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
+        "label": {
+            "translucencyByDistance": {
+                "nearFarScalar": [
+                    10000,
+                    1,
+                    80000,
+                    0
+                ]
+            },
             "fillColor": {
                 "rgba": [
                     255,
@@ -2491,7 +3035,15 @@
         "availability": "2017-02-12T11:05:00+09:00/2017-05-05T23:59:59+09:00",
         "name": "ネコ",
         "description": "<p class=\"date\">2017.2.12 11:05</p>",
-        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
+        "billboard": {
+            "scaleByDistance": {
+                "nearFarScalar": [
+                    15000,
+                    1,
+                    200000,
+                    0
+                ]
+            },
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-oXBsJKHfFXc/VqffkPIDWiI/AAAAAAAHPGo/rMexMDDoAew/s72-Ic42/neko.png",
             "scale": 0.6,
@@ -2513,7 +3065,15 @@
                 1800
             ]
         },
-        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
+        "label": {
+            "translucencyByDistance": {
+                "nearFarScalar": [
+                    10000,
+                    1,
+                    80000,
+                    0
+                ]
+            },
             "fillColor": {
                 "rgba": [
                     255,
@@ -2564,7 +3124,15 @@
         "availability": "2017-02-22T09:00:00+09:00/2017-05-05T23:59:59+09:00",
         "name": "ネコ",
         "description": "<p class=\"date\">2017.2.22 09:00</p>",
-        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
+        "billboard": {
+            "scaleByDistance": {
+                "nearFarScalar": [
+                    15000,
+                    1,
+                    200000,
+                    0
+                ]
+            },
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-oXBsJKHfFXc/VqffkPIDWiI/AAAAAAAHPGo/rMexMDDoAew/s72-Ic42/neko.png",
             "scale": 0.6,
@@ -2586,7 +3154,15 @@
                 1800
             ]
         },
-        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
+        "label": {
+            "translucencyByDistance": {
+                "nearFarScalar": [
+                    10000,
+                    1,
+                    80000,
+                    0
+                ]
+            },
             "fillColor": {
                 "rgba": [
                     255,
@@ -2637,7 +3213,15 @@
         "availability": "2017-03-30T08:45:00+09:00/2017-05-05T23:59:59+09:00",
         "name": "ネコ",
         "description": "<p class=\"date\">2017.03.30 08:45</p>",
-        "billboard": {"scaleByDistance": {"nearFarScalar": [15000,1,200000,0]},
+        "billboard": {
+            "scaleByDistance": {
+                "nearFarScalar": [
+                    15000,
+                    1,
+                    200000,
+                    0
+                ]
+            },
             "horizontalOrigin": "CENTER",
             "image": "https://lh3.googleusercontent.com/-oXBsJKHfFXc/VqffkPIDWiI/AAAAAAAHPGo/rMexMDDoAew/s72-Ic42/neko.png",
             "scale": 0.6,
@@ -2659,7 +3243,15 @@
                 1800
             ]
         },
-        "label": {"translucencyByDistance": {"nearFarScalar": [10000,1,80000,0]},
+        "label": {
+            "translucencyByDistance": {
+                "nearFarScalar": [
+                    10000,
+                    1,
+                    80000,
+                    0
+                ]
+            },
             "fillColor": {
                 "rgba": [
                     255,
