@@ -434,6 +434,9 @@
 
 		//ダブルクリックでストビューを表示する関数
 
+		var sv = new google.maps.StreetViewService();
+		var svp = void 0;
+
 		function setClickEvent() {
 			var handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas);
 			handler.setInputAction(function (click) {
@@ -443,8 +446,6 @@
 						cameraPosWC = [viewer.camera.positionWC.x, viewer.camera.positionWC.y, viewer.camera.positionWC.z];
 						cameraOrientation = [viewer.camera.heading, viewer.camera.pitch, viewer.camera.roll];
 					}
-					var sv = new google.maps.StreetViewService();
-					var svp = void 0;
 					svOnOff(1);
 					var position = pickedObject.primitive._position;
 					var cart = Cesium.Ellipsoid.WGS84.cartesianToCartographic(position);
@@ -457,7 +458,6 @@
 							fadeInOut(svNotAvailable, 1);
 							setTimeout('fadeInOut(svNotAvailable,0)', 1500);
 						} else {
-							console.log("streetViewAvailable",data);
 							if (svp === void 0) {
 								svp = new google.maps.StreetViewPanorama(
 									streetViewDiv, {
