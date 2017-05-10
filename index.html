@@ -30,10 +30,10 @@
 	<script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyCc9E-ulJKRVMPyJe_V5sUVNU8kxiDIUtg"></script>
 	<script>
 		(function (i, s, o, g, r, a, m) {
-		i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-			(i[r].q = i[r].q || []).push(arguments)
-		}, i[r].l = 1 * new Date(); a = s.createElement(o),
-			m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
 		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
 		ga('create', 'UA-55397811-9', 'auto');
@@ -156,11 +156,6 @@
 		var cesiumContainer = document.getElementById("cesiumContainer");
 		blackOutDiv = document.getElementById("blackOut");
 		svNotAvailable = document.getElementById("svNotAvailable");
-		svp = '';
-
-		//SV呼び出し
-
-		var sv = new google.maps.StreetViewService();
 
 		//SVエラーメッセージレイヤを隠す
 
@@ -335,7 +330,7 @@
 					});
 					dataSources();
 					setTimeout('fadeInOut(blackOutDiv,0)', 1000);
-					setTimeout('fadeInOut(dataSourceMenu,1)',5000);
+					setTimeout('fadeInOut(dataSourceMenu,1)', 5000);
 				}
 			}, 200);
 		}
@@ -448,9 +443,9 @@
 						cameraPosWC = [viewer.camera.positionWC.x, viewer.camera.positionWC.y, viewer.camera.positionWC.z];
 						cameraOrientation = [viewer.camera.heading, viewer.camera.pitch, viewer.camera.roll];
 					}
+					var sv = new google.maps.StreetViewService();
+					var svp = void 0;
 					svOnOff(1);
-					streetViewDiv.innerHTML = null;
-					delete svp;
 					var position = pickedObject.primitive._position;
 					var cart = Cesium.Ellipsoid.WGS84.cartesianToCartographic(position);
 					var cartLon = Cesium.Math.toDegrees(cart.longitude);
@@ -462,14 +457,19 @@
 							fadeInOut(svNotAvailable, 1);
 							setTimeout('fadeInOut(svNotAvailable,0)', 1500);
 						} else {
-							svp = new google.maps.StreetViewPanorama(
-								streetViewDiv, {
-									position: data.location.latLng,
-									zoomControl: false,
-									panControl: false,
-									addressControl: false,
-									fullscreenControl: false
-								});
+							console.log("streetViewAvailable",data);
+							if (svp === void 0) {
+								svp = new google.maps.StreetViewPanorama(
+									streetViewDiv, {
+										position: data.location.latLng,
+										zoomControl: false,
+										panControl: false,
+										addressControl: false,
+										fullscreenControl: false
+									});
+							} else {
+								svp.setPano(data.location.pano);
+							}
 						}
 						var newHeading = Cesium.Math.toRadians(0);
 						var newPitch = Cesium.Math.toRadians(-45);
@@ -528,7 +528,7 @@
 				d = '0' + d;
 			}
 			var timeString = y + '年' + m + '月' + d + '日';
-			if (timeString != displayTime){
+			if (timeString != displayTime) {
 				displayTime = timeString;
 				timeCounter(displayTime);
 			}
@@ -580,8 +580,6 @@
 		function svOnOff(param) {
 			if (param == 0) {
 				streetViewWrapper.style.display = "none";
-				streetViewDiv.innerHTML = null;
-				delete svp;
 				viewer.camera.flyTo({
 					destination: new Cesium.Cartesian3(cameraPosWC[0], cameraPosWC[1], cameraPosWC[2]),
 					orientation: {
@@ -600,21 +598,20 @@
 		}
 
 		//レイヤ切り替え
-		function dataSources(){
-		var dataSources = viewer.dataSources._dataSources;
+		function dataSources() {
+			var dataSources = viewer.dataSources._dataSources;
 
-		$("#slideMenuCheckBox :checkbox").click(function () {
-			var elements = document.getElementsByClassName("chbox");
-			for (var i = 0, l = elements.length; l > i; i++) {
-				if (elements[i].checked) {
-					dataSources[i].show = true;
-				} else {
-					dataSources[i].show = false;
+			$("#slideMenuCheckBox :checkbox").click(function () {
+				var elements = document.getElementsByClassName("chbox");
+				for (var i = 0, l = elements.length; l > i; i++) {
+					if (elements[i].checked) {
+						dataSources[i].show = true;
+					} else {
+						dataSources[i].show = false;
+					}
 				}
-			}
-		})
+			})
 		}
-
 	</script>
 
 	<div class="license">
