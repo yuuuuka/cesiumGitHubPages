@@ -1,9 +1,13 @@
-富士山「動物交通事故死」マップ
+# 富士山「動物交通事故死」マップ
+https://furuhashilab.github.io/cesiumGitHubPages/
+
 ======================
 富士山麓で起きた野生動物の交通事故の場所と動物の種類のマップです。[富士山アウトドアミュージアム](https://www.facebook.com/fom3776)が収集したデータを元に、[首都大学東京渡邉英徳研究室](http://labo.wtnv.jp)がコンテンツを制作しました。
 
-首都大学東京の授業教材として用いている以下のリポジトリを元にしています。
+これを元に、古橋研究室では、独自の改変を授業の課題として利用しています。
+https://furuhashilab.github.io/cesiumGitHubPages/
 
+首都大学東京の授業教材として用いている以下のリポジトリを元にしています。
 + [Cesiumを使ったKML可視化のサンプル](https://github.com/wtnv-lab/cesiumGitHubPages "Cesiumを使ったKML可視化のサンプル")
 
 KmlDataSourceをCzmlDataSourceに変更するなどの改造を施しています。ご興味のあるかたは参考リンクの[Cesium](http://cesiumjs.org/ "Cesium")にあるリファレンスをご覧ください。
