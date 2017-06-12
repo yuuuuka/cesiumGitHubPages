@@ -1,7 +1,14 @@
 # 富士山「動物交通事故死」マップ
 https://furuhashilab.github.io/cesiumGitHubPages/
 
-======================
+
+## TIPS 
+JSON editor online
+http://www.jsoneditoronline.org/
+
+
+---
+
 富士山麓で起きた野生動物の交通事故の場所と動物の種類のマップです。[富士山アウトドアミュージアム](https://www.facebook.com/fom3776)が収集したデータを元に、[首都大学東京渡邉英徳研究室](http://labo.wtnv.jp)がコンテンツを制作しました。
 
 これを元に、古橋研究室では、独自の改変を授業の課題として利用しています。
