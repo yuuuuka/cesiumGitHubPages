@@ -96,7 +96,7 @@
     {
         "id": "neko2",
         "availability": "2014-08-02T12:50:00+09:00/2017-05-05T23:59:59+09:00",
-        "name": "遊園地",
+        "name": "cafe",
         "description": "<p class=\"date\"></p>",
         "billboard": {
             "scaleByDistance": {
@@ -108,7 +108,7 @@
                 ]
             },
             "horizontalOrigin": "CENTER",
-            "image": "https://raw.githubusercontent.com/furuhashilab/www_furuhashiab_com/gh-pages/temp/imachan0224_t.png",
+            "image": "https://user-images.githubusercontent.com/13146558/28510456-7ea33bd4-7083-11e7-885c-516fb74252da.png",
             "scale": 0.6,
             "color": {
                 "rgba": [
@@ -123,8 +123,8 @@
         },
         "position": {
             "cartographicDegrees": [
-                139.449071,
-                35.542085,
+                139.4059968,
+                35.6947638,
                 3999
             ]
         },
@@ -154,17 +154,17 @@
             "font": "8pt Sans-Serif",
             "verticalOrigin": "BOTTOM",
             "style": "FILL",
-            "text": "遊園地"
+            "text": "cafe sign"
         },
         "polyline": {
             "width": 1,
             "positions": {
                 "cartographicDegrees": [
-                    139.449071,
-                    35.542085,
+                    139.4059968,
+                    35.6947638,
                     3999,
-                    139.449071,
-                    35.542085,
+                    139.4059968,
+                    35.6947638,
                     0
                 ]
             },
@@ -185,7 +185,7 @@
     {
         "id": "neko3",
         "availability": "2014-11-09T08:30:00+09:00/2017-05-05T23:59:59+09:00",
-        "name": "遊園地",
+        "name": "cafe",
         "description": "<p class=\"date\"></p>",
         "billboard": {
             "scaleByDistance": {
@@ -197,7 +197,7 @@
                 ]
             },
             "horizontalOrigin": "CENTER",
-            "image": "https://raw.githubusercontent.com/furuhashilab/www_furuhashiab_com/gh-pages/temp/imachan0224_t.png",
+            "image": "https://user-images.githubusercontent.com/13146558/28510456-7ea33bd4-7083-11e7-885c-516fb74252da.png",
             "scale": 0.6,
             "color": {
                 "rgba": [
@@ -212,8 +212,8 @@
         },
         "position": {
             "cartographicDegrees": [
-                141.492276,
-                43.068598,
+                139.4101303,
+                35.701759,
                 3999
             ]
         },
@@ -243,17 +243,17 @@
             "font": "8pt Sans-Serif",
             "verticalOrigin": "BOTTOM",
             "style": "FILL",
-            "text": "遊園地"
+            "text": "AKARI CAFE"
         },
         "polyline": {
             "width": 1,
             "positions": {
                 "cartographicDegrees": [
-                    141.492276,
-                    43.068598,
+                    139.4101303,
+                    35.701759,
                     3999,
-                    141.492276,
-                    43.068598,
+                    139.4101303,
+                    35.701759,
                     0
                 ]
             },
@@ -274,7 +274,7 @@
     {
         "id": "neko4",
         "availability": "2014-11-22T19:20:00+09:00/2017-05-05T23:59:59+09:00",
-        "name": "遊園地",
+        "name": "cafe",
         "description": "<p class=\"date\"></p>",
         "billboard": {
             "scaleByDistance": {
@@ -286,7 +286,7 @@
                 ]
             },
             "horizontalOrigin": "CENTER",
-            "image": "https://raw.githubusercontent.com/furuhashilab/www_furuhashiab_com/gh-pages/temp/imachan0224_t.png",
+            "image": "https://user-images.githubusercontent.com/13146558/28510456-7ea33bd4-7083-11e7-885c-516fb74252da.png",
             "scale": 0.6,
             "color": {
                 "rgba": [
@@ -301,8 +301,8 @@
         },
         "position": {
             "cartographicDegrees": [
-                139.885011,
-                35.626239,
+                139.578789,
+                35.7037136,
                 3999
             ]
         },
@@ -332,17 +332,17 @@
             "font": "8pt Sans-Serif",
             "verticalOrigin": "BOTTOM",
             "style": "FILL",
-            "text": "遊園地"
+            "text": "LEMON DROP"
         },
         "polyline": {
             "width": 1,
             "positions": {
                 "cartographicDegrees": [
-                    139.885011,
-                    35.626239,
+                    139.578789,
+                    35.7037136,
                     3999,
-                    139.885011,
-                    35.626239,
+                    139.578789,
+                    35.7037136,
                     0
                 ]
             },
@@ -363,7 +363,7 @@
     {
         "id": "neko5",
         "availability": "2014-12-22T21:00:00+09:00/2017-05-05T23:59:59+09:00",
-        "name": "遊園地",
+        "name": "cafe",
         "description": "<p class=\"date\"></p>",
         "billboard": {
             "scaleByDistance": {
@@ -375,7 +375,7 @@
                 ]
             },
             "horizontalOrigin": "CENTER",
-            "image": "https://raw.githubusercontent.com/furuhashilab/www_furuhashiab_com/gh-pages/temp/imachan0224_t.png",
+            "image": "https://user-images.githubusercontent.com/13146558/28510456-7ea33bd4-7083-11e7-885c-516fb74252da.png",
             "scale": 0.6,
             "color": {
                 "rgba": [
@@ -390,8 +390,8 @@
         },
         "position": {
             "cartographicDegrees": [
-                139.402814,
-                35.566754,
+                139.5818063,
+                35.703367,
                 3999
             ]
         },
@@ -421,17 +421,17 @@
             "font": "8pt Sans-Serif",
             "verticalOrigin": "BOTTOM",
             "style": "FILL",
-            "text": "遊園地"
+            "text": "cafe ZENON"
         },
         "polyline": {
             "width": 1,
             "positions": {
                 "cartographicDegrees": [
-                    139.402814,
-                    35.566754,
+                    139.5818063,
+                    35.703367,
                     3999,
-                    139.402814,
-                    35.566754,
+                    139.5818063,
+                    35.703367,
                     0
                 ]
             },
